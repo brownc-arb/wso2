@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>com.alrayan.wso2.openbanking</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.webapp</artifactId>
+    <name>Al Rayan WSO2 Open Banking - Web App Aggregator Module</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>iam-user-management-webapp</module>
+        <module>iam-user-management-utility-webapp</module>
+        <module>wso2/financial-open-banking/artifacts/authentication-webapp/solution</module>
+        <module>apim-user-recovery</module>
+        <module>iam-alrayan-wso2-webapp-vasco</module>
+        <module>iam-user-management-api</module>
+        <module>iam-eiDAS-cert-validator</module>
+    </modules>
+
+
+</project>

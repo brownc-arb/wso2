@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<body>
+<h2>Production Application Request</h2>
+<!-- User/app info -->
+<table width="100%">
+  <tr>
+    <th colspan="2">
+      <img width="109" height="56" src="https://www.alrayanbank.co.uk/images/logo.png">
+    </th>
+  </tr>
+  <tr>
+    <td align="left" colspan="2">
+      <strong>User: </strong>$userEmail ($userName)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Application Name: </strong>$applicationName
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Application Description: </strong>$applicationDescription
+    </td>
+  </tr>
+  <tr>
+    <td align="left" colspan="2">
+      <strong>Reference: </strong>$reference
+    </td>
+  </tr>
+</table>
+<hr/>
+<!-- Production app info -->
+<table style="width: 70%; border-collapse: collapse; table-layout: fixed;">
+  <tr>
+    <th
+      style="background: #FE6400; color: white; font-weight: bold; padding: 10px; border: 1px solid #ccc; text-align: left;">
+      Field
+    </th>
+    <th
+      style="background: #FE6400; color: white; font-weight: bold; padding: 10px; border: 1px solid #ccc; text-align: left;">
+      Value
+    </th>
+  </tr>
+    #foreach ($element in $formData)
+      <tr class="formDataTr">
+        <td style="padding: 10px; border: 1px solid #ccc; text-align: left;">
+            $element.displayName
+        </td>
+        <td style="padding: 10px; border: 1px solid #ccc; text-align: left;">
+            $element.value
+        </td>
+      </tr>
+    #end
+</table>
+<hr/>
+<br/>
+Thank you,
+<br/><br/>
+<img width="109" height="56" src="https://www.alrayanbank.co.uk/images/logo.png">
+<br/><br/>
+Al Rayan Bank
+<br/><br/>
+<hr/>
+<strong>Disclaimer:</strong>
+<br/><br/>
+Even though you will complete your registration process, Al Rayan Bank will require
+supporting documents as part of the on-boarding process. These documents will be checked
+and verified by Al Rayan Bank. This does not guarantee successful on-boarding.
+</body>
+</html>

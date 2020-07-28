@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ~ Copyright (c) 2017, WSO2 Inc. (http://www.wso2.com). All Rights Reserved.
+ ~
+ ~ This software is the property of WSO2 Inc. and its suppliers, if any.
+ ~ Dissemination of any information or reproduction of any material contained
+ ~ herein is strictly forbidden, unless permitted by WSO2 in accordance with
+ ~ the WSO2 Commercial License available at http://wso2.com/licenses.
+ ~ For specific language governing the permissions and limitations under this
+ ~ license, please see the license as well as any agreement you’ve entered into
+ ~ with WSO2 governing the purchase of this software and any associated services.
+-->
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.wso2.carbon.fs</groupId>
+        <artifactId>authentication-endpoint</artifactId>
+        <version>1.3.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+<!--
+    <properties>
+        <common.basedir>C:/WSO2/wum</common.basedir>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+!-->
+
+    <artifactId>authentication-endpoint-solution</artifactId>
+    <packaging>war</packaging>
+    <name>WSO2 Financial Solutions - Authentication Endpoint -Solution</name>
+    <description>WSO2 Financial Solutions - Authentication Endpoint -Solution</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20190722</version>
+
+        </dependency>
+        <dependency>
+            <groupId>commons-lang.wso2</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec.wso2</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ws.commons.axiom</groupId>
+            <artifactId>axiom-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.authentication.endpoint.util</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.local.auth.api</groupId>
+            <artifactId>org.wso2.carbon.identity.local.auth.api.core</artifactId>
+            <version>2.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.apache.oltu.oauth2</groupId>
+            <artifactId>oltu</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple.wso2</groupId>
+            <artifactId>json-simple</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.securevault</groupId>
+            <artifactId>org.wso2.securevault</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-lang</groupId>
+                    <artifactId>commons-lang</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.owasp.encoder</groupId>
+            <artifactId>encoder</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-bundle</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- all of these using system path are bacuse WSO2 do not currently support the distro of OB JARs vi maven -->
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.uk.consent.mgt</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.consent.mgt.stet.v140</artifactId>
+            <version>1.3.0</version>
+
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.common</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+ 
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.consent.mgt.berlin.v100</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.multiple.authorization.mgmt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.reporting.data.publisher</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.reporting.data.retriever</artifactId>
+             <version>1.3.0</version>
+
+            
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.reporting.data.common</artifactId>
+  <!--          <systemPath>
+                ${common.basedir}/wso2-obkm-1.3.0/repository/components/dropins/com.wso2.finance.open.banking.reporting.data.common-1.3.0.jar
+            </systemPath>
+            !-->
+            <version>1.3.0</version>
+
+            
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.apimgt</groupId>
+            <artifactId>org.wso2.carbon.apimgt.impl</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.gateway</artifactId>
+            <version>1.3.0</version>
+            
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-kernel</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin><!-- Overridden from parent pom to exclude generated sources -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <configuration>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                    <xmlOutput>true</xmlOutput>
+                    <findbugsXmlOutputDirectory>${project.build.directory}/findbugs
+                    </findbugsXmlOutputDirectory>
+                    <!--<excludeFilterFile>findbugs_exclude.xml</excludeFilterFile>-->
+                    <!--Exclude generated sources-->
+                </configuration>
+                <version>${maven.findbugsplugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>analyze-compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+                <version>${maven-compiler-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${maven-war-plugin.version}</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <!-- this is relative to the pom.xml directory -->
+                            <directory>src/main/resources/</directory>
+                        </resource>
+                    </webResources>
+                    <warName>authenticationendpoint</warName>
+                    <packagingExcludes>WEB-INF/lib/commons-logging*.jar</packagingExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.com). All Rights Reserved.
+  ~
+  ~ This software is the property of WSO2 Inc. and its suppliers, if any.
+  ~ Dissemination of any information or reproduction of any material contained
+  ~ herein is strictly forbidden, unless permitted by WSO2 in accordance with
+  ~ the WSO2 Commercial License available at http://wso2.com/licenses.
+  ~ For specific language governing the permissions and limitations under this
+  ~ license, please see the license as well as any agreement you’ve entered into
+  ~ with WSO2 governing the purchase of this software and any associated services.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>data-reporting-modules</artifactId>
+        <groupId>com.wso2.finance</groupId>
+        <version>1.3.0</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.wso2.finance</groupId>
+    <artifactId>com.wso2.finance.open.banking.reporting.data.common</artifactId>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-nhttp-transport</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.json.wso2</groupId>
+            <artifactId>json</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple.wso2</groupId>
+            <artifactId>json-simple</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.osgi</groupId>
+            <artifactId>org.eclipse.osgi</artifactId>
+            <version>${eclipse.osgi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.equinox</groupId>
+            <artifactId>org.eclipse.equinox.common</artifactId>
+            <version>${eclipse.equinox.common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.osgi</groupId>
+            <artifactId>org.eclipse.osgi.services</artifactId>
+            <version>${eclipse.equinox.services.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.analytics-common</groupId>
+            <artifactId>org.wso2.carbon.databridge.agent</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <configuration>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                    <xmlOutput>true</xmlOutput>
+                    <findbugsXmlOutputDirectory>${project.build.directory}/findbugs
+                    </findbugsXmlOutputDirectory>
+                    <!--Exclude generated sources-->
+                    <excludeFilterFile>${project.basedir}/findbugs-exclude.xml</excludeFilterFile>
+                </configuration>
+                <version>${maven.findbugsplugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>analyze-compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.0.0</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>7.8.2</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <configuration>
+                            <configLocation>
+                                https://raw.githubusercontent.com/wso2/code-quality-tools/v1.2/checkstyle/checkstyle.xml
+                            </configLocation>
+                            <suppressionsLocation>
+                                https://raw.githubusercontent.com/wso2/code-quality-tools/v1.1/checkstyle/suppressions.xml
+                            </suppressionsLocation>
+                            <consoleOutput>true</consoleOutput>
+                            <failsOnError>true</failsOnError>
+                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                        </configuration>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <version>3.2.0</version>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Private-Package>
+                            com.wso2.finance.open.banking.management.information.reporting.common.internal
+                        </Private-Package>
+                        <Import-Package>
+                            *
+                        </Import-Package>
+                        <Export-Package>
+                            com.wso2.finance.open.banking.management.information.reporting.common.*
+                        </Export-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+                <version>${maven-compiler-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <covered.ratio>0</covered.ratio>
+    </properties>
+
+
+</project>

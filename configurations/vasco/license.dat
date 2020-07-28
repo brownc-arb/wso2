@@ -1,0 +1,29 @@
+----- VASCO LICENCE -----
+Authentication=Yes
+Company=Al Rayan Bank
+Component=Identikey Server
+Description=
+EMV-CAP=Yes
+HSM=Yes
+LayoutVersion=1
+Location=192.168.202.164
+Product=Identikey Server
+Provisioning=Yes
+RADIUS=Yes
+SEAL=Yes
+SOAP=Yes
+SerialNo=2FC4FF0E1E
+Signature=Yes
+StaticPwdAuthentication=Yes
+Username=Vidura Nanayakkara
+WindowsLogon=Yes
+Version=3.1
+Expires=2018/12/15 10:57:20 GMT
+Generated=2018/10/31 10:57:20 GMT
+----- SIGNATURE -----
+3:302E021500980C8F82CF0F
+3267AE541457239104109917
+1D830215009422C3567A8646
+1F97F2A0B88946CB6CB0AAB9
+E7
+----- END LICENCE -----

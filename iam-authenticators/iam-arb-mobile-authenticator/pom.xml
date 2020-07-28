@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>com.alrayan.wso2.auth</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.auth.arbmobile</artifactId>
+    <name>>Al Rayan WSO2 Open Banking - Al Rayan Bank Mobile Auth POM</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+
+
+    <build>
+        <plugins>
+            <!-- Apache Felix plugin for bundle creation -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Import-Package>
+                            <!-- WSO2 IS dependencies -->
+                            org.wso2.carbon.identity.application.authentication.framework;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.authentication.framework.context;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.authentication.framework.exception;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.authentication.framework.model;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.common.model;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.core.model;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.core.util;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.authentication.framework.config.model;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            <!-- OSGi dependencies -->
+                            org.osgi.framework;
+                            version="${org.osgi.framework.imp.pkg.version.range}",
+                            org.osgi.service.component;
+                            version="${org.osgi.service.component.imp.pkg.version.range}",
+                            <!-- Others -->
+                            org.slf4j; version="${org.slf4j.imp.pkg.version.range}",
+                            javax.servlet.http,
+                            org.apache.oltu.oauth2.client.request;
+                            version="${org.apache.oltu.oauth2.imp.pkg.version.range}",
+                            org.apache.oltu.oauth2.common.exception;
+                            version="${org.apache.oltu.oauth2.imp.pkg.version.range}",
+                            org.apache.commons.lang3;
+                            version="${org.apache.commons.lang3.imp.pkg.version.range}",
+                            <!-- Al Rayan dependencies -->
+                            com.alrayan.wso2.common;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.user.core;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.user.core.util;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            <!-- User core dependencies -->
+                            org.wso2.carbon.user.core;
+                            version="${carbon.kernel.package.import.version.range}",
+                            org.wso2.carbon.user.core.util;
+                            version="${carbon.kernel.package.import.version.range}",
+                            org.wso2.carbon.utils.multitenancy;
+                            version="${carbon.kernel.package.import.version.range}",
+                            org.wso2.carbon.user.api;
+                            version="${carbon.user.api.imp.pkg.version.range}",
+                            org.wso2.carbon.context;
+                            version="${carbon.kernel.package.import.version.range}",
+                            com.wso2.finance.open.banking.uk.consent.mgt.*,
+                            org.json.simple,
+                            org.json,
+                            org.apache.axiom.om.util,
+                        </Import-Package>
+                        <Export-Package>
+                            !com.alrayan.wso2.auth.arbmobile.internal,
+                            com.alrayan.wso2.auth.arbmobile.*"
+                        </Export-Package>
+                        <DynamicImport-Package>*</DynamicImport-Package>
+                        <_dsannotations>*</_dsannotations>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- WSO2 dependencies -->
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.authentication.framework</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.common</artifactId>
+            <version>5.12.153</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.oltu.oauth2</groupId>
+            <artifactId>org.apache.oltu.oauth2.client</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.oltu.oauth2</groupId>
+            <artifactId>org.apache.oltu.oauth2.common</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.authentication.endpoint.util</artifactId>
+            <scope>RELEASED</scope>
+        </dependency>
+
+
+        <!-- OSGi dependencies -->
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.service.component.annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.osgi</groupId>
+            <artifactId>org.eclipse.osgi.services</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse</groupId>
+            <artifactId>osgi</artifactId>
+        </dependency>
+
+        <!-- Other dependencies -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.json.wso2</groupId>
+            <artifactId>json</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20140107</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.ws.commons.axiom</groupId>
+            <artifactId>axiom-api</artifactId>
+            <version>1.2.10</version>
+        </dependency>
+
+        <!-- Al Rayan dependencies -->
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.common</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.user.core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.authenticator.ob.consent</artifactId>
+            <version>${com.alrayan.ob.version}</version>
+            <classifier>${ob.classifier}</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.authenticator.ob.common</artifactId>
+            <version>${com.alrayan.ob.version}</version>
+            <classifier>${ob.classifier}</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.iam.authenticator.dependancies</artifactId>
+            <type>pom</type>
+        </dependency>
+
+    </dependencies>
+
+    <properties>
+        <!-- OSGi import version rangers -->
+        <org.osgi.framework.imp.pkg.version.range>[1.7.0,2.0.0)
+        </org.osgi.framework.imp.pkg.version.range>
+        <org.osgi.service.component.imp.pkg.version.range>[1.2.0,2.0.0)
+        </org.osgi.service.component.imp.pkg.version.range>
+        <org.slf4j.imp.pkg.version.range>[1.6.0, 2.0.0)</org.slf4j.imp.pkg.version.range>
+        <com.alrayan.wso2.imp.pkg.version.range>[1.0.0, 2.0.0)
+        </com.alrayan.wso2.imp.pkg.version.range>
+        <carbon.identity.framework.imp.pkg.version.range>(5.1.0, 6.0.0]
+        </carbon.identity.framework.imp.pkg.version.range>
+        <org.apache.oltu.oauth2.imp.pkg.version.range>(1.0.0, 2.0.0]
+        </org.apache.oltu.oauth2.imp.pkg.version.range>
+        <org.apache.commons.lang3.imp.pkg.version.range>[3.0.0, 4.0.0)
+        </org.apache.commons.lang3.imp.pkg.version.range>
+        <carbon.kernel.package.import.version.range>[4.4.0, 5.0.0)
+        </carbon.kernel.package.import.version.range>
+        <carbon.user.api.imp.pkg.version.range>[1.0.1, 2.0.0)
+        </carbon.user.api.imp.pkg.version.range>
+        <carbon.kernel.package.import.version.range>[4.4.0, 5.0.0)
+        </carbon.kernel.package.import.version.range>
+        <com.alrayan.ob.version>${project.version}</com.alrayan.ob.version>
+        <!-- Classifiers -->
+        <ob.classifier>obclassifier</ob.classifier>
+
+    </properties>
+
+</project>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Al Rayan WSO2 Open Banking - User Management Webapp]">
+  <test name="userManagementTest">
+  </test> <!-- userManagementTest -->
+</suite> <!-- Failed suite [Al Rayan WSO2 Open Banking - User Management Webapp] -->

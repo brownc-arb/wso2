@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <!--
+  <parent>
+
+    <groupId>com.github.gantsign.parent</groupId>
+    <artifactId>java8-parent</artifactId>
+
+    <version>2.1.0</version>
+    <relativePath />
+  </parent>
+-->
+
+
+  <groupId>uk.co.alrayan</groupId>
+  <artifactId>uk.co.alrayan.utils</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <properties>
+
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+    <!-- Maven Enforcer check -->
+    <enforcer.skip>true</enforcer.skip>
+
+    <!-- JaCoCo code coverage check -->
+    <jacoco.file.minimum-coverage-ratio>0.75</jacoco.file.minimum-coverage-ratio>
+    <jacoco.skip>true</jacoco.skip>
+
+    <java.require.version>[1.8,9)</java.require.version>
+    <java.target.version>1.8</java.target.version>
+
+    <!-- Check dependencies are used, declared and have the correct scope -->
+    <mdep.analyze.skip>true</mdep.analyze.skip>
+  </properties>
+
+  <dependencies>
+    <!--
+    <dependency>
+
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+  -->
+
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.16.1</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.assertj/assertj-guava -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-guava</artifactId>
+      <version>3.4.0</version>
+      <scope>test</scope>
+    </dependency>
+
+
+
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.30</version>
+      <scope>test</scope>
+    </dependency>
+
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!--
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>flatten-maven-plugin</artifactId>
+      </plugin>
+    -->
+      <!-- Uncomment to auto-add license header to files. -->
+      <!--
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <configuration>
+          <projectName>alrayan-utils</projectName>
+          <licenseName>TODO e.g. apache_v2 (for options run: mvn -N license:license-list)</licenseName>
+          <extraExtensions>
+            <kt>java</kt>
+          </extraExtensions>
+        </configuration>
+        <executions>
+          <execution>
+            <id>config</id>
+            <goals>
+              <goal>update-file-header</goal>
+            </goals>
+            <phase>process-sources</phase>
+            <configuration>
+              <roots>${basedir}</roots>
+              <includes>.editorconfig,.gitattributes,.travis.yml,pom.xml</includes>
+              <extraExtensions>
+                <editorconfig>properties</editorconfig>
+                <gitattributes>properties</gitattributes>
+                <yml>properties</yml>
+              </extraExtensions>
+            </configuration>
+          </execution>
+          <execution>
+            <id>sources</id>
+            <goals>
+              <goal>update-file-header</goal>
+            </goals>
+            <phase>process-sources</phase>
+          </execution>
+        </executions>
+      </plugin>
+      -->
+    </plugins>
+  </build>
+
+  <inceptionYear>2020</inceptionYear>
+
+  <organization>
+    <name>Al Rayan Bank PLC</name>
+  </organization>
+
+  <!-- Don't inherit license from parent POM -->
+  <licenses>
+    <license>
+      <name>TODO</name>
+    </license>
+  </licenses>
+
+  <!-- Don't inherit developers from parent POM -->
+  <developers>
+    <developer>
+      <name>TODO</name>
+    </developer>
+  </developers>
+
+</project>

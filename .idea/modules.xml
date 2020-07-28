@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/authentication-endpoint-solution.iml" filepath="$PROJECT_DIR$/iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/authentication-endpoint-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-authenticators/com.alrayan.wso2.auth.iml" filepath="$PROJECT_DIR$/iam-authenticators/com.alrayan.wso2.auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/com.alrayan.wso2.auth.arbbasic.iml" filepath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/com.alrayan.wso2.auth.arbbasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/com.alrayan.wso2.auth.arbdesktop.iml" filepath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/com.alrayan.wso2.auth.arbdesktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/com.alrayan.wso2.auth.arbfederated.iml" filepath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/com.alrayan.wso2.auth.arbfederated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/com.alrayan.wso2.auth.arbmobile.iml" filepath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/com.alrayan.wso2.auth.arbmobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apim-client-cert-parser-extension/com.alrayan.wso2.cert.parser.iml" filepath="$PROJECT_DIR$/apim-client-cert-parser-extension/com.alrayan.wso2.cert.parser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-common/com.alrayan.wso2.common.iml" filepath="$PROJECT_DIR$/iam-common/com.alrayan.wso2.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-authenticator-dependancies/com.alrayan.wso2.iam.authenticator.dependancies.iml" filepath="$PROJECT_DIR$/iam-authenticator-dependancies/com.alrayan.wso2.iam.authenticator.dependancies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-keymanager-extension/com.alrayan.wso2.keymanager.iml" filepath="$PROJECT_DIR$/iam-keymanager-extension/com.alrayan.wso2.keymanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apim-mail/com.alrayan.wso2.mail.iml" filepath="$PROJECT_DIR$/apim-mail/com.alrayan.wso2.mail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.alrayan.wso2.openbanking.iml" filepath="$PROJECT_DIR$/com.alrayan.wso2.openbanking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-userstore/com.alrayan.wso2.user.core.iml" filepath="$PROJECT_DIR$/iam-userstore/com.alrayan.wso2.user.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-vasco/com.alrayan.wso2.vasco.iml" filepath="$PROJECT_DIR$/iam-vasco/com.alrayan.wso2.vasco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-vasco-dependancies/com.alrayan.wso2.vasco.dependancies.iml" filepath="$PROJECT_DIR$/iam-vasco-dependancies/com.alrayan.wso2.vasco.dependancies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/com.alrayan.wso2.webapp.iml" filepath="$PROJECT_DIR$/iam-webapps/com.alrayan.wso2.webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/iam-user-management-api/com.alrayan.wso2.webapp.api.iml" filepath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/com.alrayan.wso2.webapp.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/apim-user-recovery/com.alrayan.wso2.webapp.apimuserrecovery.iml" filepath="$PROJECT_DIR$/iam-webapps/apim-user-recovery/com.alrayan.wso2.webapp.apimuserrecovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/com.alrayan.wso2.webapp.management.iml" filepath="$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/com.alrayan.wso2.webapp.management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/iam-user-management-utility-webapp/com.alrayan.wso2.webapp.managementutility.iml" filepath="$PROJECT_DIR$/iam-webapps/iam-user-management-utility-webapp/com.alrayan.wso2.webapp.managementutility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apim-app-registration-workflow/com.alrayan.wso2.workflow.appregistration.iml" filepath="$PROJECT_DIR$/apim-app-registration-workflow/com.alrayan.wso2.workflow.appregistration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apim-user-signup-workflow/com.alrayan.wso2.workflow.signup.iml" filepath="$PROJECT_DIR$/apim-user-signup-workflow/com.alrayan.wso2.workflow.signup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco/iam.alrayan.wso2.webapp.vasco.iml" filepath="$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco/iam.alrayan.wso2.webapp.vasco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/open-banking-eidas-validator.iml" filepath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/open-banking-eidas-validator.iml" />
+    </modules>
+  </component>
+</project>

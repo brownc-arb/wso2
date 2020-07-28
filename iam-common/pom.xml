@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>com.alrayan.wso2.openbanking</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.common</artifactId>
+    <name>Al Rayan WSO2 Open Banking - Common POM</name>
+    <packaging>bundle</packaging>
+
+    <build>
+        <plugins>
+            <!-- Apache Felix plugin for bundle creation -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Import-Package>
+                            <!-- Others -->
+                            org.slf4j; version="${org.slf4j.imp.pkg.version.range}",
+                            org.apache.commons.lang3;
+                            version="${org.apache.commons.lang3.imp.pkg.version.range}",
+                            org.apache.http.*;
+                            version="${org.apache.httpcomponents.httpclient.imp.pkg.version.range}",
+                            org.apache.axiom.om.util,
+                            io.jsonwebtoken.*,
+                        </Import-Package>
+                        <Export-Package>
+                            com.alrayan.wso2.common.*,
+                        </Export-Package>
+                        <DynamicImport-Package>*</DynamicImport-Package>
+                        <_dsannotations>*</_dsannotations>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+
+
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.ws.commons.axiom</groupId>
+            <artifactId>axiom-api</artifactId>
+            <version>1.2.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.authentication.framework</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.common</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+    <properties>
+        <!-- OSGi import version rangers -->
+        <org.slf4j.imp.pkg.version.range>[1.6.0, 2.0.0)</org.slf4j.imp.pkg.version.range>
+        <org.apache.commons.lang3.imp.pkg.version.range>[3.0.0, 4.0.0)
+        </org.apache.commons.lang3.imp.pkg.version.range>
+        <org.apache.httpcomponents.httpclient.imp.pkg.version.range>[4.3.0, 5.0.0)
+        </org.apache.httpcomponents.httpclient.imp.pkg.version.range>
+        <io.jsonwebtoken.imp.pkg.version.range>[0.6.0,1.0.0)
+        </io.jsonwebtoken.imp.pkg.version.range>
+    </properties>
+
+</project>

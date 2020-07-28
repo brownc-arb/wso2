@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<body>
+Dear $username,
+<br/><br/>
+Thank you for completing the registration process. We will be in touch shortly.
+<br/><br/>
+If you would like to contact us for an update of your registration, please find out details below:
+<br/><br/>
+<table>
+  <tr>
+    <th align="left" colspan="2">Al-Rayan Bank</th>
+  </tr>
+  <tr>
+    <td>Contact number: </td>
+    <td>$bankContactNumber</td>
+  </tr>
+  <tr>
+    <td>E-mail address: </td>
+    <td>$bankEmailAddress</td>
+  </tr>
+  <tr>
+    <td>Reference: </td>
+    <td>$reference</td>
+  </tr>
+</table>
+<br/><br/>
+Thank you,
+<br/><br/>
+<img width="109" height="56" src="https://www.alrayanbank.co.uk/images/logo.png">
+<br/><br/>
+Al Rayan Bank
+<br/><br/>
+<hr/>
+<strong>Disclaimer:</strong>
+<br/><br/>
+Even though you will complete your registration process, Al Rayan Bank will require
+supporting documents as part of the on-boarding process. These documents will be checked
+and verified by Al Rayan Bank. This does not guarantee successful on-boarding.
+</body>
+</html>

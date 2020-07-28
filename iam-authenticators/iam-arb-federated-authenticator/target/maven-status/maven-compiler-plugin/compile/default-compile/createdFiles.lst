@@ -1,0 +1,3 @@
+com\alrayan\wso2\auth\arbfederated\response\ARBFederatedResponseProcessor.class
+com\alrayan\wso2\auth\arbfederated\authenticator\ARBFederatedAuthenticator.class
+com\alrayan\wso2\auth\arbfederated\internal\ARBFederatedAuthenticatorComponent.class

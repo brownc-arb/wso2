@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>com.alrayan.wso2.openbanking</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+
+    <repositories>
+        <!--other repositories if any-->
+
+        <repository>
+            <id>local-maven-repo</id>
+            <name>copy of WSO2 finance jars that we cant get from WSO2</name>
+            <url>file://${maven.multiModuleProjectDirectory}/local-maven-repo</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+        <repository>
+            <id>wso2-nexus</id>
+            <name>WSO2 internal Repository</name>
+            <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+    </repositories>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.cert.parser</artifactId>
+    <name>Al Rayan WSO2 Open Banking - Client Transport Cert Parser Extension</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.common</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Apache Felix plugin for bundle creation -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Import-Package>
+                            com.wso2.finance.open.banking.common.*,
+                            java.util.*,
+                            java.security.cert.*
+                        </Import-Package>
+                        <Export-Package>
+                            com.alrayan.wso2.cert.parser.*
+                        </Export-Package>
+                        <DynamicImport-Package>*</DynamicImport-Package>
+                        <_dsannotations>*</_dsannotations>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+     <properties>
+        <open.banking.common.version>1.3.0</open.banking.common.version>
+    </properties>
+
+</project>

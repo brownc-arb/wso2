@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Al Rayan WSO2 Open Banking - Al Rayan Bank Desktop Journey Authenticator" duration-ms="3" started-at="2020-07-28T12:36:03Z" finished-at="2020-07-28T12:36:03Z">
+    <groups>
+    </groups>
+    <test name="arbDesktopAuthTest" duration-ms="3" started-at="2020-07-28T12:36:03Z" finished-at="2020-07-28T12:36:03Z">
+    </test> <!-- arbDesktopAuthTest -->
+  </suite> <!-- Al Rayan WSO2 Open Banking - Al Rayan Bank Desktop Journey Authenticator -->
+</testng-results>

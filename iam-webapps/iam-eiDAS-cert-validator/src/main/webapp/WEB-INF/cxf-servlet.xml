@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ~ Copyright (c) 2017, WSO2 Inc. (http://www.wso2.com). All Rights Reserved.
+ ~
+ ~ This software is the property of WSO2 Inc. and its suppliers, if any.
+ ~ Dissemination of any information or reproduction of any material contained
+ ~ herein is strictly forbidden, unless permitted by WSO2 in accordance with
+ ~ the WSO2 Commercial License available at http://wso2.com/licenses.
+ ~ For specific language governing the permissions and limitations under this
+ ~ license, please see the license as well as any agreement you’ve entered into
+ ~ with WSO2 governing the purchase of this software and any associated services.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+         http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+    <jaxrs:server id="bankservice" address="/validator">
+        <jaxrs:serviceBeans>
+            <ref bean="certValidator"/>
+        </jaxrs:serviceBeans>
+    </jaxrs:server>
+
+
+    <bean id="certValidator" class="com.wso2.finance.open.banking.eidas.validator.ApplicationCertificateValidator"/>
+</beans>
+

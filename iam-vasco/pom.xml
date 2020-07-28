@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>com.alrayan.wso2.openbanking</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.vasco</artifactId>
+    <name>Al Rayan WSO2 Open Banking - VASCO</name>
+    <packaging>bundle</packaging>
+
+    <build>
+        <plugins>
+            <!--Apache Felix plugin for bundle creation-->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Import-Package>
+                            com.alrayan.wso2.common;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.common.utils;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.common.exception;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            <!-- Others -->
+                            org.slf4j; version="${org.slf4j.imp.pkg.version.range}",
+                            org.apache.commons.lang3;
+                            version="${org.apache.commons.lang3.imp.pkg.version.range}",
+                            org.apache.http.entity,
+                            org.apache.axis2.saaj,
+                            org.apache.axiom.om.util,
+                            org.json,
+                            org.apache.axiom.util.*,
+                            org.w3c.dom
+                        </Import-Package>
+                        <Export-Package>
+                            com.alrayan.wso2.vasco.*; version="${project.version}"
+                        </Export-Package>
+                        <Embed-Dependency>*;classifier="${vasco.sdk.classifier}"</Embed-Dependency>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <compilerArgument>-XDignore.symbol.file</compilerArgument>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!-- Al Rayan dependencies -->
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.common</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.wso2.orbit.commons-httpclient</groupId>
+                    <artifactId>commons-httpclient</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-httpclient</groupId>
+                    <artifactId>commons-httpclient</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.vasco.imagegenerator</artifactId>
+            <version>${com.alrayan.wso2.vasco.sdk.version}</version>
+            <classifier>${vasco.sdk.classifier}</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.vasco.utilities</artifactId>
+            <version>${com.alrayan.wso2.vasco.sdk.version}</version>
+            <classifier>${vasco.sdk.classifier}</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.vasco.dependancies</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-jaxws</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-httpclient</groupId>
+                    <artifactId>commons-httpclient</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <!-- OSGi import version rangers -->
+        <org.slf4j.imp.pkg.version.range>[1.6.0, 2.0.0)</org.slf4j.imp.pkg.version.range>
+        <org.apache.commons.lang3.imp.pkg.version.range>[3.0.0, 4.0.0)
+        </org.apache.commons.lang3.imp.pkg.version.range>
+        <com.alrayan.wso2.imp.pkg.version.range>[1.0.0, 2.0.0)
+        </com.alrayan.wso2.imp.pkg.version.range>
+        <!-- Dependency versions -->
+        <com.alrayan.wso2.vasco.sdk.version>${project.version}</com.alrayan.wso2.vasco.sdk.version>
+        <!-- Classifiers -->
+        <vasco.sdk.classifier>vascosdk</vasco.sdk.classifier>
+    </properties>
+
+</project>

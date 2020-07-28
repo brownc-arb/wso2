@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>com.alrayan.wso2.openbanking</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.keymanager</artifactId>
+    <name>Al Rayan WSO2 Open Banking - Key Manager Extension</name>
+
+    <build>
+        <plugins>
+            <!-- Apache Felix plugin for bundle creation -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Import-Package>
+                            <!-- Al Rayan dependencies -->
+                            com.alrayan.wso2.common;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.keymanager;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            <!-- Others -->
+                            org.slf4j; version="${org.slf4j.imp.pkg.version.range}",
+                            org.apache.axiom.om.util,
+                            org.apache.commons.io,
+                            org.wso2.carbon.authenticator.stub,
+                            org.wso2.carbon.user.mgt.stub,
+                            <!-- Axis 2 -->
+                            org.apache.axis2; version="${org.apache.axis2.imp.pkg.version.range}",
+                            org.apache.axis2.client;
+                            version="${org.apache.axis2.imp.pkg.version.range}",
+                            org.apache.axis2.context;
+                            version="${org.apache.axis2.imp.pkg.version.range}",
+                            org.apache.axis2.transport.http;
+                            version="${org.apache.axis2.imp.pkg.version.range}",
+                            <!-- WSO2 IAM dependencies -->
+                            org.wso2.carbon.identity.application.common.model;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.common.model.script.xsd;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.common.model.xsd;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.common.util;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.mgt.stub;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.idp.mgt.stub;
+                            version="${carbon.identity.framework.imp.pkg.version.range}",
+                            <!-- WSO2 Carbon dependencies -->
+                            org.wso2.carbon.utils;
+                            version="${carbon.kernel.package.import.version.range}",
+                            org.wso2.carbon.utils.multitenancy;
+                            version="${carbon.kernel.package.import.version.range}",
+                            <!-- WSO2 APIM dependencies -->
+                            org.wso2.carbon.apimgt.api;
+                            version="${org.wso2.carbon.apimgt.imp.pkg.version.range}",
+                            org.wso2.carbon.apimgt.api.model;
+                            version="${org.wso2.carbon.apimgt.imp.pkg.version.range}",
+                            org.wso2.carbon.apimgt.impl;
+                            version="${org.wso2.carbon.apimgt.imp.pkg.version.range}",
+                            org.wso2.carbon.apimgt.impl.internal;
+                            version="${org.wso2.carbon.apimgt.imp.pkg.version.range}",
+                            org.wso2.carbon.apimgt.impl.utils;
+                            version="${org.wso2.carbon.apimgt.imp.pkg.version.range}",
+                            com.wso2.finance.open.banking.common.exception,
+                            com.wso2.finance.open.banking.common.identity,
+                            com.wso2.finance.open.banking.common.util,
+                            com.wso2.finance.open.banking.eidas.certificate.extractor.common.model,
+                            com.wso2.finance.open.banking.eidas.certificate.extractor,
+                            org.apache.commons.lang,
+                            java.security.cert
+                        </Import-Package>
+                        <Export-Package>
+                            com.alrayan.wso2.keymanager.*
+                        </Export-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- API Manager dependencies -->
+        <dependency>
+            <groupId>org.wso2.carbon.apimgt</groupId>
+            <artifactId>org.wso2.carbon.apimgt.impl</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.idp.mgt.stub</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.eidas.certificate.extractor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.common</artifactId>
+        </dependency>
+        <!-- Other dependencies -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!-- Al Rayan dependencies -->
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.common</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <!-- OSGi import version rangers -->
+        <org.slf4j.imp.pkg.version.range>[1.6.0, 2.0.0)</org.slf4j.imp.pkg.version.range>
+        <org.apache.commons.lang3.imp.pkg.version.range>[3.0.0, 4.0.0)
+        </org.apache.commons.lang3.imp.pkg.version.range>
+        <com.alrayan.wso2.imp.pkg.version.range>[1.0.0, 2.0.0)
+        </com.alrayan.wso2.imp.pkg.version.range>
+        <org.apache.axis2.imp.pkg.version.range>[1.6, 1.7)</org.apache.axis2.imp.pkg.version.range>
+        <carbon.kernel.package.import.version.range>[4.4.0, 5.0.0)
+        </carbon.kernel.package.import.version.range>
+        <carbon.identity.framework.imp.pkg.version.range>(5.1.0, 6.0.0]
+        </carbon.identity.framework.imp.pkg.version.range>
+        <org.wso2.carbon.apimgt.imp.pkg.version.range>(6.0.0, 7.0.0]
+        </org.wso2.carbon.apimgt.imp.pkg.version.range>
+    </properties>
+
+</project>

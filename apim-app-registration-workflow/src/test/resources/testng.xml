@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Al Rayan WSO2 Open Banking - App Registration Workflow">
+    <test name="appRegistrationWorkflowTest" parallel="false">
+        <classes>
+        </classes>
+    </test>
+</suite>

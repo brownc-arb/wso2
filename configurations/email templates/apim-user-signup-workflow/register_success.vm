@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<body>
+Dear $username,
+<br/><br/>
+You have successfully registered for Sandbox API
+<br/><br/>
+Please click <a href="$developerPortalURL">here</a> to access the Developer Portal.
+<br/><br/>
+Thank you,
+<br/><br/>
+<img width="109" height="56" src="https://www.alrayanbank.co.uk/images/logo.png">
+<br/><br/>
+Al Rayan Bank
+<br/><br/>
+<hr/>
+<strong>Disclaimer:</strong>
+<br/><br/>
+Even though you will complete your registration process, Al Rayan Bank will require
+supporting documents as part of the on-boarding process. These documents will be checked
+and verified by Al Rayan Bank. This does not guarantee successful on-boarding.
+</body>
+</html>

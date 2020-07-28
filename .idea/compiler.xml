@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com.alrayan.wso2.user.core" />
+        <module name="iam.alrayan.wso2.webapp.vasco" />
+        <module name="com.alrayan.wso2.webapp.managementutility" />
+        <module name="com.alrayan.wso2.keymanager" />
+        <module name="com.alrayan.wso2.webapp.apimuserrecovery" />
+        <module name="com.alrayan.wso2.workflow.signup" />
+        <module name="com.alrayan.wso2.workflow.appregistration" />
+        <module name="com.alrayan.wso2.mail" />
+        <module name="com.alrayan.wso2.common" />
+        <module name="com.alrayan.wso2.webapp.api" />
+        <module name="open-banking-eidas-validator" />
+        <module name="authentication-endpoint-solution" />
+        <module name="com.alrayan.wso2.webapp.management" />
+        <module name="com.alrayan.wso2.auth.arbdesktop" />
+        <module name="com.alrayan.wso2.auth.arbfederated" />
+        <module name="com.alrayan.wso2.auth.arbbasic" />
+        <module name="com.alrayan.wso2.auth.arbmobile" />
+        <module name="com.alrayan.wso2.vasco" />
+        <module name="com.alrayan.wso2.cert.parser" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authentication-endpoint-solution" target="1.8" />
+      <module name="com.alrayan.wso2.auth" target="1.8" />
+      <module name="com.alrayan.wso2.auth.arbbasic" target="1.8" />
+      <module name="com.alrayan.wso2.auth.arbdesktop" target="1.8" />
+      <module name="com.alrayan.wso2.auth.arbfederated" target="1.8" />
+      <module name="com.alrayan.wso2.auth.arbmobile" target="1.8" />
+      <module name="com.alrayan.wso2.cert.parser" target="1.8" />
+      <module name="com.alrayan.wso2.common" target="1.8" />
+      <module name="com.alrayan.wso2.iam.authenticator.dependancies" target="1.8" />
+      <module name="com.alrayan.wso2.keymanager" target="1.8" />
+      <module name="com.alrayan.wso2.mail" target="1.8" />
+      <module name="com.alrayan.wso2.openbanking" target="1.8" />
+      <module name="com.alrayan.wso2.openbanking (1)" target="1.8" />
+      <module name="com.alrayan.wso2.openbanking (2)" target="1.8" />
+      <module name="com.alrayan.wso2.user.core" target="1.8" />
+      <module name="com.alrayan.wso2.vasco" target="1.8" />
+      <module name="com.alrayan.wso2.vasco.dependancies" target="1.8" />
+      <module name="com.alrayan.wso2.webapp" target="1.8" />
+      <module name="com.alrayan.wso2.webapp.api" target="1.8" />
+      <module name="com.alrayan.wso2.webapp.apimuserrecovery" target="1.8" />
+      <module name="com.alrayan.wso2.webapp.management" target="1.8" />
+      <module name="com.alrayan.wso2.webapp.managementutility" target="1.8" />
+      <module name="com.alrayan.wso2.workflow.appregistration" target="1.8" />
+      <module name="com.alrayan.wso2.workflow.signup" target="1.8" />
+      <module name="iam.alrayan.wso2.webapp.vasco" target="1.8" />
+      <module name="open-banking-eidas-validator" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.alrayan.wso2.vasco" options="-XDignore.symbol.file" />
+    </option>
+  </component>
+</project>

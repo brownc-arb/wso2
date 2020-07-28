@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>com.alrayan.wso2.openbanking</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.iam.authenticator.dependancies</artifactId>
+    <name>Al Rayan WSO2 Open Banking - IAM Authenticator Dependencies</name>
+    <packaging>pom</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>install-openbanking-common-jar</id>
+                        <phase>install</phase>
+                        <configuration>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>com.alrayan.wso2</groupId>
+                            <artifactId>com.alrayan.wso2.authenticator.ob.common</artifactId>
+                            <file>libs/com.wso2.finance.open.banking.common.jar</file>
+                            <version>${com.alrayan.ob.version}</version>
+                            <classifier>${ob.classifier}</classifier>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>install-openbanking-consent-jar</id>
+                        <phase>install</phase>
+                        <configuration>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>com.alrayan.wso2</groupId>
+                            <artifactId>com.alrayan.wso2.authenticator.ob.consent</artifactId>
+                            <file>libs/com.wso2.finance.open.banking.uk.consent.mgt.jar</file>
+                            <version>${com.alrayan.ob.version}</version>
+                            <classifier>${ob.classifier}</classifier>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>install-auth-api-core-jar</id>
+                        <phase>install</phase>
+                        <configuration>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>com.alrayan.wso2</groupId>
+                            <artifactId>org.wso2.carbon.identity.local.auth.api.core</artifactId>
+                            <file>libs/org.wso2.carbon.identity.local.auth.api.core-2.1.1.jar</file>
+                            <version>${com.alrayan.ob.version}</version>
+                            <classifier>${ob.classifier}</classifier>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <com.alrayan.ob.version>${project.version}</com.alrayan.ob.version>
+        <!-- Classifiers -->
+        <ob.classifier>obclassifier</ob.classifier>
+    </properties>
+</project>

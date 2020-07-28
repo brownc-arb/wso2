@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.alrayan.wso2:com.alrayan.wso2.vasco.utilities:vascosdk:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alrayan/wso2/com.alrayan.wso2.vasco.utilities/1.0.0-SNAPSHOT/com.alrayan.wso2.vasco.utilities-1.0.0-SNAPSHOT-vascosdk.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alrayan/wso2/com.alrayan.wso2.vasco.utilities/1.0.0-SNAPSHOT/com.alrayan.wso2.vasco.utilities-1.0.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alrayan/wso2/com.alrayan.wso2.vasco.utilities/1.0.0-SNAPSHOT/com.alrayan.wso2.vasco.utilities-1.0.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

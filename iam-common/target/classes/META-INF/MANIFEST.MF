@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1595939747694
+Build-Jdk: 1.8.0_201
+Built-By: brownc
+Bundle-Description: Al Rayan WSO2 Open Banking
+Bundle-ManifestVersion: 2
+Bundle-Name: com.alrayan.wso2.common
+Bundle-SymbolicName: com.alrayan.wso2.common
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: com.alrayan.wso2.common;version="1.0.0",com.alrayan.wso2
+ .common.crypto;version="1.0.0";uses:="com.alrayan.wso2.common.exception
+ ",com.alrayan.wso2.common.exception;version="1.0.0",com.alrayan.wso2.co
+ mmon.jwt;version="1.0.0";uses:="com.alrayan.wso2.common.crypto",com.alr
+ ayan.wso2.common.model;version="1.0.0",com.alrayan.wso2.common.utils;ve
+ rsion="1.0.0";uses:="com.alrayan.wso2.common.exception,com.alrayan.wso2
+ .common.model,org.apache.http.entity"
+Import-Package: org.slf4j;version="[1.6.0,2.0.0)",org.apache.commons.lan
+ g3;version="[3.0.0,4.0.0)",org.apache.http;version="[4.3.0,5.0.0)",org.
+ apache.http.client.config;version="[4.3.0,5.0.0)",org.apache.http.clien
+ t.entity;version="[4.3.0,5.0.0)",org.apache.http.client.methods;version
+ ="[4.3.0,5.0.0)",org.apache.http.client.utils;version="[4.3.0,5.0.0)",o
+ rg.apache.http.conn;version="[4.3.0,5.0.0)",org.apache.http.conn.socket
+ ;version="[4.3.0,5.0.0)",org.apache.http.conn.ssl;version="[4.3.0,5.0.0
+ )",org.apache.http.entity;version="[4.3.0,5.0.0)",org.apache.http.impl.
+ client;version="[4.3.0,5.0.0)",org.apache.http.impl.conn;version="[4.3.
+ 0,5.0.0)",org.apache.http.message;version="[4.3.0,5.0.0)",org.apache.ht
+ tp.util;version="[4.3.0,5.0.0)",org.apache.axiom.om.util
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.3.0.201609221906

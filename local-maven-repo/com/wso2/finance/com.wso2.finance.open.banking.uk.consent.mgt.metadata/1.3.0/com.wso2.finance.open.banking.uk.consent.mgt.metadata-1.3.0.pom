@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ ~ Copyright (c) 2017, WSO2 Inc. (http://www.wso2.com). All Rights Reserved.
+ ~
+ ~ This software is the property of WSO2 Inc. and its suppliers, if any.
+ ~ Dissemination of any information or reproduction of any material contained
+ ~ herein is strictly forbidden, unless permitted by WSO2 in accordance with
+ ~ the WSO2 Commercial License available at http://wso2.com/licenses.
+ ~ For specific language governing the permissions and limitations under this
+ ~ license, please see the license as well as any agreement you’ve entered into
+ ~ with WSO2 governing the purchase of this software and any associated services.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ob-common</artifactId>
+        <groupId>com.wso2.finance</groupId>
+        <version>1.3.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>com.wso2.finance.open.banking.uk.consent.mgt.metadata</artifactId>
+    <name>WSO2 Financial Solutions - Payment Consent MetaData Module</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json.wso2</groupId>
+            <artifactId>json</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-nhttp-transport</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wso2.finance</groupId>
+            <artifactId>com.wso2.finance.open.banking.common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.utils</groupId>
+            <artifactId>org.wso2.carbon.database.utils</artifactId>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin><!-- Overridden from parent pom to exclude generated sources -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <configuration>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                    <xmlOutput>true</xmlOutput>
+                    <findbugsXmlOutputDirectory>${project.build.directory}/findbugs
+                    </findbugsXmlOutputDirectory>
+                </configuration>
+                <version>${maven.findbugsplugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>analyze-compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>
+                            ${project.artifactId}
+                        </Bundle-SymbolicName>
+                        <Private-Package>
+                            com.wso2.finance.open.banking.uk.consent.enforcement.internal,
+                        </Private-Package>
+                        <Import-Package>
+                            org.osgi.framework; version="${osgi.framework.imp.pkg.version.range}",
+                            org.osgi.service.component; version="${osgi.service.component.imp.pkg.version.range}",
+                            com.wso2.finance.open.banking.common.config.uk; version="${project.version}",
+                            com.wso2.finance.open.banking.common.exception; version="${project.version}",
+                            com.wso2.finance.open.banking.common.util; version="${project.version}"
+                        </Import-Package>
+                        <Export-Package>
+                            com.wso2.finance.open.banking.uk.consent.mgt.metadata.data,
+                            com.wso2.finance.open.banking.uk.consent.mgt.metadata.service,
+                            com.wso2.finance.open.banking.uk.consent.mgt.metadata.constants,
+                            com.wso2.finance.open.banking.uk.consent.mgt.metadata.model,
+                            com.wso2.finance.open.banking.uk.consent.mgt.metadata.util,
+                            com.wso2.finance.open.banking.uk.consent.mgt.metadata.persistence
+                        </Export-Package>
+                        <DynamicImport-Package>*</DynamicImport-Package>
+                        <_dsannotations>*</_dsannotations>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+                <version>${maven-compiler-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <covered.ratio>0.0</covered.ratio>
+    </properties>
+
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Al Rayan WSO2 Open Banking - Common" duration-ms="2" started-at="2020-07-28T12:35:46Z" finished-at="2020-07-28T12:35:46Z">
+    <groups>
+    </groups>
+    <test name="commonTest" duration-ms="2" started-at="2020-07-28T12:35:46Z" finished-at="2020-07-28T12:35:46Z">
+    </test> <!-- commonTest -->
+  </suite> <!-- Al Rayan WSO2 Open Banking - Common -->
+</testng-results>

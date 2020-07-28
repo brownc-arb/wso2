@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<body>
+Dear $username,
+<br/><br/>
+Thank you for your interest in on-boarding with us.
+<br/><br/>
+All your documents and details have checked.
+<br/><br/>
+I regret to inform you have not satisfied all our requirements and we have <strong>REJECTED</strong>
+your registration, as shown below.
+<br/><br/>
+<strong>Reason for rejection:</strong>
+<br/><br/>
+    $reasonForRejection
+<br/><br/>
+Please rectify the rejection reasons and re-submit the rejections only.
+<br/><br/>
+If you feel like our decision is incorrect, you have the right to refer this to the FCA (details
+shown below) making reference to your reference number.
+<br/><br/>
+<table>
+  <tr>
+    <th align="left" colspan="2">Al-Rayan Bank</th>
+  </tr>
+  <tr>
+    <td>Contact number: </td>
+    <td>$bankContactNumber</td>
+  </tr>
+  <tr>
+    <td>E-mail address: </td>
+    <td>$bankEmailAddress</td>
+  </tr>
+</table>
+<br/><br/>
+Thank you,
+<br/><br/>
+<img width="109" height="56" src="https://www.alrayanbank.co.uk/images/logo.png">
+<br/><br/>
+Al Rayan Bank
+</body>
+</html>

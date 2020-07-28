@@ -1,0 +1,4 @@
+com\alrayan\wso2\auth\arbmobile\authenticator\ARBMobileAuthenticator.class
+com\alrayan\wso2\auth\arbmobile\consent\ARBMobileConsentProcessor.class
+com\alrayan\wso2\auth\arbmobile\internal\ARBMobileAuthenticatorComponent.class
+com\alrayan\wso2\auth\arbmobile\util\ARBMobileConstants.class
