@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2fed1-7cec-4adf-81ae-69be23e20347" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/com.alrayan.wso2.auth.arbmobile-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/com.alrayan.wso2.auth.arbmobile-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595947340926</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Initial ARB Build git check commit">
+      <created>1596119607171</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596119607171</updated>
+    </task>
+    <task id="LOCAL-00016" summary="utility to set up local repos">
+      <created>1596132403459</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596132403459</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -170,6 +192,29 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changes for PINCode complexity" />
     <MESSAGE value="CRONTO security fix #195" />
@@ -180,13 +225,14 @@
     <MESSAGE value="added junit tests" />
     <MESSAGE value="Initial ARB Build #ARB" />
     <MESSAGE value="Initial ARB Build git check commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial ARB Build git check commit" />
+    <MESSAGE value="utility to set up local repos" />
+    <option name="LAST_COMMIT_MESSAGE" value="utility to set up local repos" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="845" y="402" key="#Notifications" timestamp="1594899149996">
+    <state x="845" y="402" width="702" height="275" key="#Notifications" timestamp="1596441333032">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="845" y="402" key="#Notifications/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1594899149996" />
+    <state x="845" y="402" width="702" height="275" key="#Notifications/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596441333032" />
     <state x="222" y="183" width="1501" height="852" key="#Project_Structure" timestamp="1595247847404">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -195,6 +241,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="640" y="274" key="#Servers/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595947614572" />
+    <state x="771" y="447" key="#VCS_History_Cache_Settings" timestamp="1596119641652">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="771" y="447" key="#VCS_History_Cache_Settings/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596119641652" />
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593638808827">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -219,14 +269,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="693" y="309" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1594811210446" />
-    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1595947326966">
+    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1596132402538">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595947326966" />
-    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog" timestamp="1596119570694">
+    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596132402538" />
+    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog" timestamp="1596192215130">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596119570694" />
+    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596192215130" />
     <state x="768" y="266" key="FileChooserDialogImpl" timestamp="1595942144864">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -255,6 +305,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="185" y="174" key="SettingsEditor/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595947899589" />
+    <state x="540" y="272" key="Vcs.Push.Dialog.v2" timestamp="1596441319914">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="540" y="272" key="Vcs.Push.Dialog.v2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596441319914" />
     <state x="158" y="208" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1594642547759">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -267,6 +321,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="728" y="113" width="870" height="801" key="find.popup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1593716320530" />
+    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596441231337">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596441231337" />
     <state x="615" y="250" width="672" height="677" key="run.anything.popup" timestamp="1593716677679">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
