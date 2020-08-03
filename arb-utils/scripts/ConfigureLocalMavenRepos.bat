@@ -3,6 +3,8 @@
 # the -Dfile should point to where the open banking fiance jars have been downloaded to
 # should be an env var ideally
 #
+# added a comment 1
+
 
 mvn install:install-file -Dfile=C:\WSO2\wum\wso2-obkm-1.3.0\repository\components\plugins\com.wso2.finance.open.banking.common_1.3.0.jar -DgroupId=com.wso2.finance -DartifactId=com.wso2.finance.open.banking.common -Dversion=1.3.0 -Dpackaging=jar -DlocalRepositoryPath=C:\d\svn\wso2\iam-openbanking\local-maven-repo
 
