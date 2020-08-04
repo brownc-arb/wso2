@@ -10,7 +10,11 @@
 /iam-vasco/target/
 /iam-userstore/target/
 /iam-keymanager-extension/target/
-/arb-utils/uk.co.alrayan.utils/src/main/java/uk/co/alrayan/PinUtils.java
 /apim-app-registration-workflow/target/
 /apim-mail/target/
 /apim-user-signup-workflow/
+/iam-authenticators/iam-arb-basic-authenticator/target/*
+
+
+/iam-webapps/iam-user-management-api/target/
+/iam-webapps/iam-eiDAS-cert-validator/target/
