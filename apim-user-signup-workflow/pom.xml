@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>com.alrayan.wso2.openbanking</artifactId>
+        <groupId>com.alrayan.wso2</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.alrayan.wso2.workflow.signup</artifactId>
+    <name>Al Rayan WSO2 Open Banking - User Sign Up Workflow POM</name>
+    <packaging>bundle</packaging>
+
+    <build>
+        <plugins>
+            <!-- Apache Felix plugin for bundle creation -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>1.4.0</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Import-Package>
+                            <!-- Others -->
+                            org.apache.velocity,
+                            org.apache.velocity.app,
+                            org.apache.velocity.context,
+                            org.apache.commons.lang3;
+                            version="${org.apache.commons.lang3.imp.pkg.version.range}",
+                            org.slf4j; version="${org.slf4j.imp.pkg.version.range}",
+                            <!-- Al Rayan -->
+                            com.alrayan.wso2.common;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.common.model;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.common.utils;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.common.exception;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            com.alrayan.wso2.mail;
+                            version="${com.alrayan.wso2.imp.pkg.version.range}",
+                            <!-- API Management -->
+                            org.wso2.carbon.apimgt.api;
+                            org.wso2.carbon.apimgt.impl.dto;
+                            org.wso2.carbon.apimgt.impl.workflow;
+                            org.wso2.carbon.user.api;
+                        </Import-Package>
+                        <Export-Package>
+                            com.alrayan.wso2.workflow.signup.*
+                        </Export-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Others -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!-- API Manager dependencies -->
+        <dependency>
+            <groupId>org.wso2.carbon.apimgt</groupId>
+            <artifactId>org.wso2.carbon.apimgt.impl</artifactId>
+        </dependency>
+        <!-- Al Rayan dependencies -->
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alrayan.wso2</groupId>
+            <artifactId>com.alrayan.wso2.mail</artifactId>
+        </dependency>
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <!-- OSGi import version rangers -->
+        <org.slf4j.imp.pkg.version.range>[1.6.0, 2.0.0)</org.slf4j.imp.pkg.version.range>
+        <com.alrayan.wso2.imp.pkg.version.range>[1.0.0, 2.0.0)
+        </com.alrayan.wso2.imp.pkg.version.range>
+        <carbon.user.api.imp.pkg.version.range>[1.0.1, 2.0.0)
+        </carbon.user.api.imp.pkg.version.range>
+        <org.wso2.carbon.apimgt.imp.pkg.version.range>(6.0.0, 7.0.0]
+        </org.wso2.carbon.apimgt.imp.pkg.version.range>
+        <org.apache.commons.lang3.imp.pkg.version.range>[3.0.0, 4.0.0)
+        </org.apache.commons.lang3.imp.pkg.version.range>
+    </properties>
+
+</project>

@@ -12,7 +12,7 @@
 /iam-keymanager-extension/target/
 /apim-app-registration-workflow/target/
 /apim-mail/target/
-/apim-user-signup-workflow/
+
 /iam-authenticators/iam-arb-basic-authenticator/target/*
 
 

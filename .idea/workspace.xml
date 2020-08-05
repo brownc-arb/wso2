@@ -17,9 +17,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77b2fed1-7cec-4adf-81ae-69be23e20347" name="Default Changelist" comment="utility to set up local repos">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.project" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
@@ -270,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596450889818</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="project files updated">
+      <created>1596562862972</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1596562862972</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -313,19 +317,7 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -347,7 +339,8 @@
     <MESSAGE value="Initial ARB Build #ARB" />
     <MESSAGE value="Initial ARB Build git check commit" />
     <MESSAGE value="utility to set up local repos" />
-    <option name="LAST_COMMIT_MESSAGE" value="utility to set up local repos" />
+    <MESSAGE value="project files updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="project files updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="402" width="702" height="275" key="#Notifications" timestamp="1596441333032">
@@ -390,10 +383,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="693" y="309" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1594811210446" />
-    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1596562417298">
+    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1596562855471">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596562417298" />
+    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596562855471" />
     <state width="929" height="442" key="Diff.GoToChangePopup" timestamp="1596441405480">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -446,10 +439,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="712" y="244" key="VCS.ChangeListViewerDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596451102285" />
-    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596470872708">
+    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596644136415">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596470872708" />
+    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596644136415" />
     <state x="158" y="208" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1594642547759">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -474,10 +467,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="721" y="400" key="git4idea.rebase.GitRebaseDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596445054426" />
-    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596470950347">
+    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596642900322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596470950347" />
+    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596642900322" />
     <state x="762" y="383" key="git4idea.ui.GitTagDialog" timestamp="1596451180020">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
