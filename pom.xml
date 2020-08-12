@@ -14,12 +14,6 @@
             <version>4.10</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <artifactId>junit</artifactId>
-            <groupId>junit</groupId>
-            <version>4.10</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
     <name>Al Rayan WSO2 Open Banking - Aggregator POM</name>
     <description>Al Rayan WSO2 Open Banking</description>
@@ -625,7 +619,7 @@
         <maven.checkstyle.excludes/>
 
         <!-- ARB added specifics -->
-        <maven.multiModuleProjectDirectory>c:/d/svn/wso2/iam-openbanking</maven.multiModuleProjectDirectory>
+        <maven.multiModuleProjectDirectory>C:/GitRepo/iam-openbanking</maven.multiModuleProjectDirectory>
     </properties>
 
 </project>

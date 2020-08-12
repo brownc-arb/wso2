@@ -26,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/apim-user-signup-workflow/com.alrayan.wso2.workflow.signup.iml" filepath="$PROJECT_DIR$/apim-user-signup-workflow/com.alrayan.wso2.workflow.signup.iml" />
       <module fileurl="file://$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco/iam.alrayan.wso2.webapp.vasco.iml" filepath="$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco/iam.alrayan.wso2.webapp.vasco.iml" />
       <module fileurl="file://$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/open-banking-eidas-validator.iml" filepath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/open-banking-eidas-validator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arb-utils/uk.co.alrayan.utils/uk.co.alrayan.utils.iml" filepath="$PROJECT_DIR$/arb-utils/uk.co.alrayan.utils/uk.co.alrayan.utils.iml" />
     </modules>
   </component>
 </project>

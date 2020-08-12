@@ -19,6 +19,7 @@
     String paymentChargesRequestInfoJSON = request.getParameter("paymentChargesRequestInfo");
     String app = request.getParameter("appName");
     String paymentType = request.getParameter("paymentType");
+    String consentID = request.getParameter("consentID");
     PaymentChargesRequestInfo paymentChargesRequestInfo = new ObjectMapper()
             .readValue(paymentChargesRequestInfoJSON, PaymentChargesRequestInfo.class);
     String payerAccountIdentification = paymentChargesRequestInfo.getPayerAccountIdentification();
@@ -32,6 +33,9 @@
     } else {
         // Get bank charges now.
         paymentChargesRequestInfo.setPayerAccountIdentification(accountId);
+        if("Batch File Payment".equals(paymentType)) {
+                    paymentChargesRequestInfo.setPayerReference("FILEPAYMENT___" + consentID + "___" + paymentChargesRequestInfo.getPayerReference());
+                }
         Map<String, Object> paymentChargesResponseMessage =
                 UKBankChargesAPI.getBankCharges(paymentChargesRequestInfo, app);
         if ("true".equals(paymentChargesResponseMessage.get("isError"))) {

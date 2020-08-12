@@ -1,0 +1,52 @@
+Index: iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/webapp/oauth2_authz.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/webapp/oauth2_authz.jsp	(revision 101176)
++++ iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/webapp/oauth2_authz.jsp	(date 1596629219000)
+@@ -874,7 +874,8 @@
+                                                         paymentChargesRequestInfo: $(this).attr('data-payment'),
+                                                         appName: $(this).attr('data-appName'),
+                                                         accountId: this.value,
+-                                                        paymentType: '<%= paymentType %>'
++                                                        paymentType: '<%= paymentType %>',
++                                                        consentID: '<%=Encode.forHtml(consentId)%>'
+                                                   })">
+ 
+                                         <option value="default"
+@@ -2431,7 +2432,8 @@
+                     '<%= new ObjectMapper().writeValueAsString(paymentChargesRequestInfo)%>',
+                 appName: '<%= app %>',
+                 accountId: document.getElementById("accountId").value,
+-                paymentType: '<%= paymentType %>'
++                paymentType: '<%= paymentType %>',
++                consentID: '<%=Encode.forHtml(consentId)%>'
+             });
+         }
+         else
+Index: iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/webapp/payment_charges.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/webapp/payment_charges.jsp	(revision 101176)
++++ iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/webapp/payment_charges.jsp	(date 1596629006000)
+@@ -19,6 +19,7 @@
+     String paymentChargesRequestInfoJSON = request.getParameter("paymentChargesRequestInfo");
+     String app = request.getParameter("appName");
+     String paymentType = request.getParameter("paymentType");
++    String consentID = request.getParameter("consentID");
+     PaymentChargesRequestInfo paymentChargesRequestInfo = new ObjectMapper()
+             .readValue(paymentChargesRequestInfoJSON, PaymentChargesRequestInfo.class);
+     String payerAccountIdentification = paymentChargesRequestInfo.getPayerAccountIdentification();
+@@ -32,6 +33,9 @@
+     } else {
+         // Get bank charges now.
+         paymentChargesRequestInfo.setPayerAccountIdentification(accountId);
++        if("Batch File Payment".equals(paymentType)) {
++                    paymentChargesRequestInfo.setPayerReference("FILEPAYMENT___" + consentID + "___" + paymentChargesRequestInfo.getPayerReference());
++                }
+         Map<String, Object> paymentChargesResponseMessage =
+                 UKBankChargesAPI.getBankCharges(paymentChargesRequestInfo, app);
+         if ("true".equals(paymentChargesResponseMessage.get("isError"))) {
