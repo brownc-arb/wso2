@@ -345,7 +345,10 @@
                     error.setCode(AlRayanError.PINCODE_NOT_COMPLEX_ENOUGH.getErrorCode());
                     error.setDescription(AlRayanError
                                                 .PINCODE_NOT_COMPLEX_ENOUGH.getMessage());
-                } else {
+                } else
+                    /*
+                        this code does not make sense. e.getMessage will not be JSON!
+                    {
                     error = new Gson().fromJson(e.getMessage(), Error.class);
                     if (error != null) {
                         Map<String, String> enumLookUp =
@@ -360,7 +363,8 @@
                         } else {
                             error.setDescription(errorMessage);
                         }
-                    } else {
+                    } else */
+                    {
                         error = new Error();
                         error.setCode(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getErrorCode());
                         error.setDescription(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getMessage());
