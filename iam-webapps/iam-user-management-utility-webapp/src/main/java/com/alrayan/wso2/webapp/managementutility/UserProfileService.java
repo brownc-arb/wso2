@@ -79,7 +79,7 @@ public class UserProfileService {
     public Response changePIN(PINChangeRequest pinChangeRequest, @Context HttpHeaders headers,
                               @PathParam("username") String username) {
 
-        log.info(">> changePIN for:"+ username);
+        log.info(">> changePIN for:"+ username + " requested via API");
 
         try {
             // Validate user
@@ -203,6 +203,7 @@ public class UserProfileService {
 
             int retVal = PinUtils.checkPin(newPin);
             if (retVal < 0) {
+                log.info(">> changePIN (via FORM) for:"+ username + " PIN code not complex enough");
                 throw new PINValidationFailedException("New Pin code not complex enough");
                 
             }
@@ -210,6 +211,8 @@ public class UserProfileService {
             alRayanUserStoreManager.changePIN(username,newPin);
 
             // Change PIN code is a success.
+            log.info(">> changePIN (via FORM) for:"+ username + " is a success");
+
             return Response.status(Response.Status.NO_CONTENT)
                     .build();
         } catch (org.wso2.carbon.user.core.UserStoreException e) {
@@ -238,7 +241,7 @@ public class UserProfileService {
                                 .getErrorMessageWithCode()))
                 .build();
          
-                log.info("<< changePIN for:"+ username + "returning with response:" + response );
+                log.info("<< changePIN for:"+ username + "returning with response:" + response.getStatus());
                 return response;
         }
     }
