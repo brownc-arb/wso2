@@ -322,55 +322,37 @@
 
             } catch (Exception e) {
                 Error error;
-                if(e instanceof UserNameNotFoundException) {
+                if (e instanceof UserNameNotFoundException) {
                     error = new Error();
                     error.setCode(AlRayanError
                             .ACTING_USERNAME_CLAIM_NOT_SPECIFIED.getErrorCode());
                     error.setDescription(AlRayanError
                             .ACTING_USERNAME_CLAIM_NOT_SPECIFIED.getMessage());
-                } else if(e instanceof UserNameNotUniqueException) {
+                } else if (e instanceof UserNameNotUniqueException) {
                     error = new Error();
                     error.setCode(AlRayanError
                             .USER_WITH_SAME_ACTING_USERNAME_FOUND.getErrorCode());
                     error.setDescription(AlRayanError
                             .USER_WITH_SAME_ACTING_USERNAME_FOUND.getMessage());
-                } else if(e instanceof PINCodeNotFoundException) {
+                } else if (e instanceof PINCodeNotFoundException) {
                     error = new Error();
                     error.setCode(AlRayanError
                             .PIN_CODE_NOT_SPECIFIED.getErrorCode());
                     error.setDescription(AlRayanError
                             .PIN_CODE_NOT_SPECIFIED.getMessage());
-                } else if(e instanceof PINCodeNotComplexException) {
+                } else if (e instanceof PINCodeNotComplexException) {
                     error = new Error();
                     error.setCode(AlRayanError.PINCODE_NOT_COMPLEX_ENOUGH.getErrorCode());
                     error.setDescription(AlRayanError
-                                                .PINCODE_NOT_COMPLEX_ENOUGH.getMessage());
-                } else
-                    /*
-                        this code does not make sense. e.getMessage will not be JSON!
-                    {
-                    error = new Gson().fromJson(e.getMessage(), Error.class);
-                    if (error != null) {
-                        Map<String, String> enumLookUp =
-                                Arrays.stream(IdentityRecoveryConstants.ErrorMessages.values())
-                                        .collect(Collectors
-                                                .toMap(IdentityRecoveryConstants.ErrorMessages::getCode,
-                                                        IdentityRecoveryConstants.ErrorMessages::getMessage));
-                        String errorMessage = enumLookUp.get(error.getCode());
-                        if(StringUtils.isEmpty(errorMessage)){
-                            error.setCode(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getErrorCode());
-                            error.setDescription(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getMessage());
-                        } else {
-                            error.setDescription(errorMessage);
-                        }
-                    } else */
-                    {
-                        error = new Error();
-                        error.setCode(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getErrorCode());
-                        error.setDescription(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getMessage());
-                    }
+                            .PINCODE_NOT_COMPLEX_ENOUGH.getMessage());
+                } else {
+                    error = new Error();
+                    error.setCode(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getErrorCode());
+                    error.setDescription(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getMessage());
                 }
+
                 request.setAttribute("error", true);
+
                 if (error != null) {
                     request.setAttribute("errorMsg", error.getDescription());
                     request.setAttribute("errorCode", error.getCode());
