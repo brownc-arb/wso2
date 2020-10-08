@@ -34,6 +34,7 @@
 <%@ page import="org.apache.commons.lang.StringUtils" %>
 <%@ page import="org.json.JSONArray" %>
 <%@ page import="org.json.JSONObject" %>
+<%@ page import="org.json.JSONException" %>
 <%@ page import="org.owasp.encoder.Encode" %>
 <%@ page import="org.wso2.carbon.context.PrivilegedCarbonContext" %>
 <%@ page import="org.wso2.carbon.identity.application.authentication.endpoint.client.DebtorAccountRetriever" %>
