@@ -85,6 +85,7 @@ try {
 <img src="data:image/jpg;base64, <%= base64Binary %>"
      alt="<%=AuthenticationEndpointUtil.i18n(resourceBundle, "cronto.code")%>"/>
 <input type="hidden" name="vascoChallengeKey" id="vascoChallengeKey"
+<%--ALRAYANSUB-195---%>
        value="<%= Encode.forHtmlAttribute(challengeKey) %>"/>
 <%
 } catch (VASCOException e) {
