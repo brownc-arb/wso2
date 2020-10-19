@@ -326,17 +326,25 @@
                     // Ensure authorization method for selected account is multiple
                     if ("multiple".equals(selectedAccount.get("authorizationMethod").toString())) {
 
-                        JSONArray userArray = selectedAccount.getJSONArray("authorizationUsers");
-                        // Build MultipleAuthorization Detail
                         Date expiryDate = new Date(Long.parseLong(sessionExpiry));
                         MultipleAuthorizationData.Builder builder = new MultipleAuthorizationData
                                 .Builder(expiryDate, clientId, consentId, paymentAccount);
 
-                        StreamSupport.stream(userArray.spliterator(), false).forEach(obj -> {
-                            JSONObject user = (JSONObject) obj;
+                        try{
+                            JSONArray userArray = selectedAccount.getJSONArray("authorizationUsers");
+                            // Build MultipleAuthorization Detail
+                            StreamSupport.stream(userArray.spliterator(), false).forEach(obj -> {
+                                JSONObject user = (JSONObject) obj;
+                                MultipleAuthorizationUser authorizationUser = new MultipleAuthorizationUser();
+                                builder.addUser(user.get("user_id").toString());
+                            });
+
+                        } catch (JSONException e){
+                            // codes to get JSON object
+                            JSONObject user = selectedAccount.getJSONObject("authorizationUsers");
                             MultipleAuthorizationUser authorizationUser = new MultipleAuthorizationUser();
                             builder.addUser(user.get("user_id").toString());
-                        });
+                        }
 
                         multiAuthSession = builder.build();
 
