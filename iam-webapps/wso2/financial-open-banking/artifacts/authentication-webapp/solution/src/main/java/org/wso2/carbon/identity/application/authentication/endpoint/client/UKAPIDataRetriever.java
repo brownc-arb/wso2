@@ -529,6 +529,10 @@ public class UKAPIDataRetriever extends APIDataRetriever {
                     paymentInitiationData.add(PERMISSIONS + " : " + paymentSetUpResponse.getData().getPermission());
                     paymentInitiationData.add(FREQUENCY + " : " + paymentSetUpResponse.getData().getInitiation()
                             .getFrequency());
+                    paymentInitiationData.add(INSTRUCTED_AMOUNT + " : " + paymentSetUpResponse.getData().getInitiation()
+                            .getFinalPaymentAmount().getAmount());
+                    paymentInitiationData.add(INSTRUCTED_CURRENCY + " :" + paymentSetUpResponse.getData().getInitiation()
+                            .getFinalPaymentAmount().getCurrency());
                     paymentInitiationData.add(FIRST_PAYMENT_DATE_TIME + " : " + paymentSetUpResponse.getData().getInitiation()
                             .getFirstPaymentDateTime());
 
@@ -687,7 +691,7 @@ public class UKAPIDataRetriever extends APIDataRetriever {
                                     .getCreditorAccount().getName())
                             .setPayerReference(payerReference)
                             .build();
-                } if(paymentSetUpResponse.getPaymentType()!=null && paymentSetUpResponse.getPaymentType().
+                } else if(paymentSetUpResponse.getPaymentType()!=null && paymentSetUpResponse.getPaymentType().
                         contains("file-payment")){
                     // Refer to: https://support.wso2.com/jira/browse/ALRAYANSUB-196
                     paymentChargesRequestInfo = new PaymentChargesRequestInfoBuilder()
