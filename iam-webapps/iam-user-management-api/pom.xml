@@ -12,7 +12,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>com.alrayan.wso2.webapp.api</artifactId>
-    <name>Al Rayan WSO2 Open Banking - User Management Webapp</name>
+    <name>Al Rayan WSO2 Open Banking - User Management Webapp APIs</name>
     <packaging>war</packaging>
 
     <dependencies>

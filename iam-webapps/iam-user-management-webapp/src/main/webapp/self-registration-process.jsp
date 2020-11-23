@@ -61,8 +61,11 @@
 <%@ page import="java.security.NoSuchAlgorithmException" %>
 <%@ page import="java.security.UnrecoverableKeyException" %>
 <%@ page import="com.alrayan.wso2.common.utils.KeyStoreUtils" %>
+<%@ page import="org.apache.commons.logging.Log" %>
+<%@ page import="org.apache.commons.logging.LogFactory" %>
 
 <%@ page import="uk.co.alrayan.PinUtils" %>
+<%@ page import="java.io.PrintStream" %>
 
 <jsp:directive.include file="localize.jsp"/>
 
@@ -100,6 +103,7 @@
     <div class="container-fluid body-wrapper">
 
         <%
+
             String username;
             String encryptedUsername;
             // Validate whether the request is of the same platform and is not directly posted.
@@ -282,9 +286,11 @@
                             .PIN_CODE_NOT_SPECIFIED.getErrorMessageWithCode());
                 }
 
-                int retVal2 = uk.co.alrayan.PinUtils.checkPin(dbpPinCode);
-                if (retVal2 < 0) {
-                    throw new PINCodeNotComplexException(AlRayanError.PINCODE_NOT_COMPLEX_ENOUGH.getErrorMessageWithCode());
+                if("true".equals(AlRayanConfiguration.PIN_COMPLEXITY_CHECK.getValue())) {
+                    int retVal2 = uk.co.alrayan.PinUtils.checkPin(dbpPinCode);
+                    if (retVal2 < 0) {
+                        throw new PINCodeNotComplexException(AlRayanError.PINCODE_NOT_COMPLEX_ENOUGH.getErrorMessageWithCode());
+                    }
                 }
 
                 SelfRegistrationUser selfRegistrationUser = new SelfRegistrationUser();
@@ -347,6 +353,7 @@
                             .PINCODE_NOT_COMPLEX_ENOUGH.getMessage());
                 } else {
                     error = new Error();
+
                     error.setCode(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getErrorCode());
                     error.setDescription(AlRayanError.UNKNOWN_ERROR_WHILE_USER_REGISTRATION.getMessage());
                 }
@@ -354,7 +361,7 @@
                 request.setAttribute("error", true);
 
                 if (error != null) {
-                    request.setAttribute("errorMsg", error.getDescription());
+                    request.setAttribute("errorMsg", "exception:"  + "\n" + e.getLocalizedMessage()+ e.getMessage() + "\n" + error.getDescription());
                     request.setAttribute("errorCode", error.getCode());
                 }
                 request.getRequestDispatcher("error.jsp").forward(request, response);
