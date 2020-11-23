@@ -1,0 +1,60 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="authentication-endpoint-solution:war exploded">
+    <output-path>$PROJECT_DIR$/iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/target/authentication-endpoint-solution-1.3.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>authentication-endpoint-solution</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="authentication-endpoint-solution" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.json:json:20190722" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: commons-codec.wso2:commons-codec:1.4.0.wso2v1" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.4" />
+          <element id="library" level="project" name="Maven: org.apache.ws.commons.axiom:axiom-api:1.2.11-wso2v10" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-activation_1.1_spec:1.0.2" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-javamail_1.4_spec:1.6" />
+          <element id="library" level="project" name="Maven: jaxen:jaxen:1.1.6" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:1.0.1" />
+          <element id="library" level="project" name="Maven: org.wso2.orbit.com.nimbusds:nimbus-jose-jwt:5.8.0.wso2v1" />
+          <element id="library" level="project" name="Maven: net.minidev:json-smart:2.3" />
+          <element id="library" level="project" name="Maven: net.minidev:accessors-smart:1.2" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:5.0.4" />
+          <element id="library" level="project" name="Maven: org.wso2.securevault:org.wso2.securevault:1.0.0-wso2v2" />
+          <element id="library" level="project" name="Maven: org.apache.ws.commons.axiom:axiom-impl:1.2.11" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:wstx-asl:3.2.9" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
+          <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.0" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: org.wso2.orbit.org.owasp.encoder:encoder:1.2.0.wso2v1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.4" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.2" />
+          <element id="library" level="project" name="Maven: io.jsonwebtoken:jjwt:0.9.0" />
+          <element id="archive" name="com.alrayan.wso2.common-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="com.alrayan.wso2.common" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
+          <element id="library" level="project" name="Maven: com.nimbusds:nimbus-jose-jwt:2.10.1" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk16:1.46" />
+          <element id="library" level="project" name="Maven: net.jcip:jcip-annotations:1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/target/authentication-endpoint-solution-1.3.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="authentication-endpoint-solution/web/Web" />
+    </root>
+  </artifact>
+</component>

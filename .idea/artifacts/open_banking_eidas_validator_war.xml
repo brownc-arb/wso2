@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="open-banking-eidas-validator:war">
+    <output-path>$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>open-banking-eidas-validator</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="eidas-cert-validator.war">
+      <element id="artifact" artifact-name="open-banking-eidas-validator:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="iam.alrayan.wso2.webapp.vasco:war">
+    <output-path>$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>iam.alrayan.wso2.webapp.vasco</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="iam-vasco-mock.war">
+      <element id="artifact" artifact-name="iam.alrayan.wso2.webapp.vasco:war exploded" />
+    </root>
+  </artifact>
+</component>
