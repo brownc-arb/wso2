@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/iam-webapps/apim-user-recovery" />
+    <file type="web" url="file://$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco" />
+    <file type="web" url="file://$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator" />
+    <file type="web" url="file://$PROJECT_DIR$/iam-webapps/iam-user-management-api" />
+    <file type="web" url="file://$PROJECT_DIR$/iam-webapps/iam-user-management-utility-webapp" />
+    <file type="web" url="file://$PROJECT_DIR$/iam-webapps/iam-user-management-webapp" />
+    <file type="web" url="file://$PROJECT_DIR$/iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

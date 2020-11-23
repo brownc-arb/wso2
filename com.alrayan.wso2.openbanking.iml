@@ -7,7 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/arb-utils/uk.co.alrayan.utils/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/arb-utils/uk.co.alrayan.utils/src/test/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/arb-utils/uk.co.alrayan.utils/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/arb-utils/uk.co.alrayan.utils/.settings" />
       <excludeFolder url="file://$MODULE_DIR$/arb-utils/uk.co.alrayan.utils/target" />
+      <excludeFolder url="file://$MODULE_DIR$/jaggery.common/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

@@ -8,12 +8,7 @@
     <artifactId>com.alrayan.wso2.openbanking</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <dependencies>
-        <dependency>
-            <artifactId>junit</artifactId>
-            <groupId>junit</groupId>
-            <version>4.10</version>
-            <scope>compile</scope>
-        </dependency>
+
         <dependency>
             <artifactId>junit</artifactId>
             <groupId>junit</groupId>

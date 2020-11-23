@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="local-maven-repo" />
+      <option name="name" value="local-maven-repo" />
+      <option name="url" value="file://$PROJECT_DIR$/local-maven-repo" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="wso2-nexus" />
       <option name="name" value="WSO2 internal Repository" />
       <option name="url" value="https://maven.wso2.org/nexus/content/groups/wso2-public/" />

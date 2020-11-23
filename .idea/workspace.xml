@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="authentication-endpoint-solution:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77b2fed1-7cec-4adf-81ae-69be23e20347" name="Default Changelist" comment="utility to set up local repos">
+    <list default="true" id="77b2fed1-7cec-4adf-81ae-69be23e20347" name="Default Changelist" comment="added more logging to check what's going on.">
       <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apim-client-cert-parser-extension/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
@@ -26,52 +27,81 @@
       <change afterPath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arb-utils/scripts/ConfigureLocalMavenRepos.bat" beforeDir="false" afterPath="$PROJECT_DIR$/arb-utils/scripts/ConfigureLocalMavenRepos.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.alrayan.wso2.openbanking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.alrayan.wso2.openbanking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/com.alrayan.wso2.auth.arbbasic-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/com.alrayan.wso2.auth.arbbasic-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-basic-authenticator/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/com.alrayan.wso2.auth.arbdesktop-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/com.alrayan.wso2.auth.arbdesktop-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Desktop Journey Authenticator/arbDesktopAuthTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Desktop Journey Authenticator/arbDesktopAuthTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Desktop Journey Authenticator/arbDesktopAuthTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Desktop Journey Authenticator/arbDesktopAuthTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-deskop-authenticator/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/com.alrayan.wso2.auth.arbfederated-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/com.alrayan.wso2.auth.arbfederated-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Federated Auth/arbFederatedAuthTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Federated Auth/arbFederatedAuthTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Federated Auth/arbFederatedAuthTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Federated Auth/arbFederatedAuthTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-federated-authenticator/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/com.alrayan.wso2.auth.arbmobile-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/com.alrayan.wso2.auth.arbmobile-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/Al Rayan WSO2 Open Banking - Al Rayan Bank Basic Auth/basicAuthTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-authenticators/iam-arb-mobile-authenticator/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-common/src/main/java/com/alrayan/wso2/common/AlRayanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/src/main/java/com/alrayan/wso2/common/AlRayanConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-common/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-common/target/classes/com/alrayan/wso2/common/AlRayanConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/classes/com/alrayan/wso2/common/AlRayanConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-common/target/com.alrayan.wso2.common-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/com.alrayan.wso2.common-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-common/target/surefire-reports/Al Rayan WSO2 Open Banking - Common/commonTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/surefire-reports/Al Rayan WSO2 Open Banking - Common/commonTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-common/target/surefire-reports/Al Rayan WSO2 Open Banking - Common/commonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/surefire-reports/Al Rayan WSO2 Open Banking - Common/commonTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-common/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-common/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-common/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-common/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/apim-user-recovery/com.alrayan.wso2.webapp.apimuserrecovery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/apim-user-recovery/com.alrayan.wso2.webapp.apimuserrecovery.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco/iam.alrayan.wso2.webapp.vasco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-alrayan-wso2-webapp-vasco/iam.alrayan.wso2.webapp.vasco.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/open-banking-eidas-validator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/open-banking-eidas-validator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/target/eidas-cert-validator.war" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/target/eidas-cert-validator.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/target/open-banking-eidas-validator-1.0.0-SNAPSHOT/WEB-INF/lib/json-20090211.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-eiDAS-cert-validator/target/open-banking-eidas-validator-1.0.0-SNAPSHOT/WEB-INF/lib/nimbus-jose-jwt-5.8.0.wso2v1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/com.alrayan.wso2.webapp.api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/com.alrayan.wso2.webapp.api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/Al Rayan WSO2 Open Banking - User Management Webapp/userManagementTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/Al Rayan WSO2 Open Banking - User Management Webapp/userManagementTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/Al Rayan WSO2 Open Banking - User Management Webapp/userManagementTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/Al Rayan WSO2 Open Banking - User Management Webapp/userManagementTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/usermanagement#api#v1.war" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-api/target/usermanagement#api#v1.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-utility-webapp/com.alrayan.wso2.webapp.managementutility.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-utility-webapp/com.alrayan.wso2.webapp.managementutility.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-utility-webapp/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-utility-webapp/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/com.alrayan.wso2.webapp.management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/com.alrayan.wso2.webapp.management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/src/main/webapp/self-registration-process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/iam-webapps/iam-user-management-webapp/src/main/webapp/self-registration-process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.common/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.common/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.consent.mgt.stet.v140/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.consent.mgt.stet.v140/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.eidas.certificate.extractor/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.eidas.certificate.extractor/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.event.notifications.uk.300.common/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.event.notifications.uk.300.common/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.mtls.authenticator/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.mtls.authenticator/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.multiple.authorization.mgmt/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.multiple.authorization.mgmt/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.reporting.data.common/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.reporting.data.common/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.reporting.data.retriever/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/com.wso2.finance.open.banking.reporting.data.retriever/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/om.wso2.finance.open.banking.consent.mgt.berlin.v100/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local-maven-repo/com/wso2/finance/om.wso2.finance.open.banking.consent.mgt.berlin.v100/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
+    <list id="3c4654e1-8e5a-4460-a2e0-f21d25ed05da" name="Revert &quot;bad error processing code commented out&quot;" comment="Revert &quot;bad error processing code commented out&quot;&#10;&#10;This reverts commit 9aab482b" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +124,13 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
   </component>
@@ -110,17 +147,110 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apimgr" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="project.structure.side.proportion" value="0.3996828" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/webapp/oauth2_authz_vasco_cronto.jsp" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn install" />
     </option>
+  </component>
+  <component name="RunManager" selected="Remote.IAMDEV02">
+    <configuration name="self-registration-process.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.43" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/self-registration-process.jsp" />
+      <deployment>
+        <artifact name="com.alrayan.wso2.webapp.management:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/com_alrayan_wso2_webapp_management_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="self-registration-process_jsp_iam-openbanking" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61013" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="com.alrayan.wso2.webapp.management:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Remote.IAMDEV02" />
+      <item itemvalue="Tomcat Server.self-registration-process.jsp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Tomcat Server.self-registration-process.jsp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SearchEverywhereConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="TopHitSEContributor" />
+      <filtered-out-file-type name="RecentFilesSEContributor" />
+      <filtered-out-file-type name="ClassSearchEverywhereContributor" />
+      <filtered-out-file-type name="SymbolSearchEverywhereContributor" />
+      <filtered-out-file-type name="UrlSearchEverywhereContributor" />
+      <filtered-out-file-type name="RunConfigurationsSEContributor" />
+      <filtered-out-file-type name="ActionSearchEverywhereContributor" />
+      <filtered-out-file-type name="YAMLKeysSearchEverywhereContributor" />
+    </file-type-list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showFiles" value="false" />
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\brownc\AppData\Roaming\Subversion</configuration>
@@ -133,6 +263,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593622185683</updated>
+      <workItem from="1600075332774" duration="6196000" />
+      <workItem from="1600157737120" duration="9765000" />
+      <workItem from="1601366729919" duration="1189000" />
+      <workItem from="1601373054138" duration="1081000" />
+      <workItem from="1601374948340" duration="704000" />
+      <workItem from="1601377706439" duration="2609000" />
+      <workItem from="1601380400171" duration="656000" />
+      <workItem from="1601464818701" duration="1362000" />
+      <workItem from="1601491603075" duration="1076000" />
+      <workItem from="1601547515585" duration="1279000" />
+      <workItem from="1601561057568" duration="1495000" />
+      <workItem from="1601563052318" duration="1637000" />
+      <workItem from="1601567548450" duration="599000" />
+      <workItem from="1601572961915" duration="860000" />
+      <workItem from="1601575283064" duration="1022000" />
+      <workItem from="1601584011472" duration="1928000" />
+      <workItem from="1601585973527" duration="1226000" />
+      <workItem from="1601653214297" duration="1208000" />
+      <workItem from="1601664882753" duration="1123000" />
+      <workItem from="1601904634279" duration="598000" />
+      <workItem from="1601909212086" duration="6454000" />
+      <workItem from="1601999690413" duration="1632000" />
+      <workItem from="1602001510100" duration="1478000" />
+      <workItem from="1602071274716" duration="4228000" />
+      <workItem from="1602080069175" duration="948000" />
+      <workItem from="1602081047298" duration="1784000" />
+      <workItem from="1602086391318" duration="1158000" />
+      <workItem from="1602088514015" duration="978000" />
+      <workItem from="1602090994679" duration="1898000" />
+      <workItem from="1602092920322" duration="1891000" />
+      <workItem from="1602094837246" duration="666000" />
+      <workItem from="1602097415925" duration="1795000" />
+      <workItem from="1602141349337" duration="1685000" />
+      <workItem from="1602143554762" duration="3729000" />
+      <workItem from="1602149072349" duration="1074000" />
+      <workItem from="1602155271942" duration="1166000" />
+      <workItem from="1602235055456" duration="867000" />
+      <workItem from="1602253185090" duration="6437000" />
+      <workItem from="1603108461259" duration="10258000" />
+      <workItem from="1603119370025" duration="776000" />
+      <workItem from="1603178478992" duration="600000" />
+      <workItem from="1603369524091" duration="606000" />
+      <workItem from="1604937218902" duration="29000" />
+      <workItem from="1606125083882" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="changes for PINCode complexity">
       <created>1593772490153</created>
@@ -274,8 +448,74 @@
       <option name="project" value="LOCAL" />
       <updated>1596562862972</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="missing commits">
+      <created>1596644282405</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1596644282405</updated>
+    </task>
+    <task id="LOCAL-00022" summary="bad error processing code commented out">
+      <created>1601290079185</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1601290079185</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fixing issue if error thrown on PIN check.">
+      <created>1601367281204</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1601367281204</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added more logging to check what's going on.">
+      <created>1601378738421</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1601378738421</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added missing translations as per https://alrayanbankuk.atlassian.net/browse/OB-268">
+      <created>1601999861840</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1601999861840</updated>
+    </task>
+    <task id="LOCAL-00026" summary="resolved issues with POM JAR dependencies&#10;includes patch for ARB-218">
+      <created>1602143935133</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1602143935133</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Alrayansub-195">
+      <created>1602254628780</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1602254628780</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix from WSO2 for ARB-218">
+      <created>1603109054053</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1603109054053</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added more logging to check what's going on.">
+      <created>1606125230410</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1606125230410</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -315,6 +555,31 @@
             </State>
           </value>
         </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/d/svn/wso2/iam-openbanking/iam-webapps/iam-user-management-utility-webapp/src/main/java/com/alrayan/wso2/webapp/managementutility" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -325,10 +590,13 @@
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="changes for PINCode complexity" />
     <MESSAGE value="CRONTO security fix #195" />
     <MESSAGE value="utils project&#10;Added PIN Code Complexity checks class" />
@@ -340,17 +608,26 @@
     <MESSAGE value="Initial ARB Build git check commit" />
     <MESSAGE value="utility to set up local repos" />
     <MESSAGE value="project files updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="project files updated" />
+    <MESSAGE value="missing commits" />
+    <MESSAGE value="bad error processing code commented out" />
+    <MESSAGE value="fixing issue if error thrown on PIN check." />
+    <MESSAGE value="added missing translations as per https://alrayanbankuk.atlassian.net/browse/OB-268" />
+    <MESSAGE value="resolved issues with POM JAR dependencies&#10;includes patch for ARB-218" />
+    <MESSAGE value="Alrayansub-195" />
+    <MESSAGE value="fix from WSO2 for ARB-218" />
+    <MESSAGE value="added more logging to check what's going on." />
+    <option name="LAST_COMMIT_MESSAGE" value="added more logging to check what's going on." />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="402" width="702" height="275" key="#Notifications" timestamp="1596441333032">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="845" y="402" width="702" height="275" key="#Notifications/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596441333032" />
-    <state x="222" y="183" width="1501" height="852" key="#Project_Structure" timestamp="1595247847404">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="178" y="1226" width="1501" height="852" key="#Project_Structure" timestamp="1602098484554">
+      <screen x="0" y="1080" width="1536" height="864" />
     </state>
-    <state x="222" y="183" width="1501" height="852" key="#Project_Structure/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595247847404" />
+    <state x="222" y="183" width="1501" height="852" key="#Project_Structure/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601584328137" />
+    <state x="178" y="1226" key="#Project_Structure/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1602098484554" />
     <state x="640" y="274" key="#Servers" timestamp="1595947614572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -359,10 +636,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="771" y="447" key="#VCS_History_Cache_Settings/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596119641652" />
-    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593638808827">
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601564090984">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1593638808827" />
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601564090984" />
     <state x="714" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595247622102">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -371,10 +648,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="745" y="230" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595587752836" />
-    <state x="724" y="319" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1595247804654">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="579" y="1335" width="687" height="578" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1602098457503">
+      <screen x="0" y="1080" width="1536" height="864" />
     </state>
     <state x="724" y="319" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595247804654" />
+    <state x="579" y="1335" width="687" height="578" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1602098457503" />
     <state x="612" y="274" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595528918202">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -383,22 +661,28 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="693" y="309" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1594811210446" />
-    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1596562855471">
+    <state x="545" y="1370" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602141674560">
+      <screen x="0" y="1080" width="1536" height="864" />
+    </state>
+    <state x="681" y="362" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1600165652001" />
+    <state x="545" y="1370" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1602141674560" />
+    <state x="190" y="72" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1603109048644">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="212" y="67" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596562855471" />
+    <state x="190" y="72" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1603109048644" />
     <state width="929" height="442" key="Diff.GoToChangePopup" timestamp="1596441405480">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="929" height="442" key="Diff.GoToChangePopup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596441405480" />
-    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog" timestamp="1596561827341">
+    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog" timestamp="1603108846131">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596561827341" />
-    <state x="768" y="266" key="FileChooserDialogImpl" timestamp="1596470988925">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1603108846131" />
+    <state x="614" y="1293" key="FileChooserDialogImpl" timestamp="1602155790863">
+      <screen x="0" y="1080" width="1536" height="864" />
     </state>
-    <state x="768" y="266" key="FileChooserDialogImpl/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596470988925" />
+    <state x="768" y="266" key="FileChooserDialogImpl/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602080535574" />
+    <state x="614" y="1293" key="FileChooserDialogImpl/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1602155790863" />
     <state x="772" y="459" key="Github.CreateGistDialog" timestamp="1596449362428">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -411,38 +695,70 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="806" y="437" key="Github.ShareDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596441953633" />
-    <state width="1520" height="282" key="GridCell.Tab.0.bottom" timestamp="1596119518574">
+    <state width="1748" height="266" key="GridCell.Tab.0.bottom" timestamp="1602002389000">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1520" height="282" key="GridCell.Tab.0.bottom/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596119518574" />
-    <state width="1520" height="282" key="GridCell.Tab.0.center" timestamp="1596119518574">
+    <state width="1748" height="266" key="GridCell.Tab.0.bottom/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602002389000" />
+    <state width="1576" height="270" key="GridCell.Tab.0.bottom/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1601293186626" />
+    <state width="1748" height="266" key="GridCell.Tab.0.center" timestamp="1602002389000">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1520" height="282" key="GridCell.Tab.0.center/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596119518574" />
-    <state width="1520" height="282" key="GridCell.Tab.0.left" timestamp="1596119518574">
+    <state width="1748" height="266" key="GridCell.Tab.0.center/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602002389000" />
+    <state width="1576" height="270" key="GridCell.Tab.0.center/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1601293186624" />
+    <state width="1748" height="266" key="GridCell.Tab.0.left" timestamp="1602002389000">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1520" height="282" key="GridCell.Tab.0.left/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596119518574" />
-    <state width="1520" height="282" key="GridCell.Tab.0.right" timestamp="1596119518574">
+    <state width="1748" height="266" key="GridCell.Tab.0.left/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602002389000" />
+    <state width="1576" height="270" key="GridCell.Tab.0.left/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1601293186623" />
+    <state width="1748" height="266" key="GridCell.Tab.0.right" timestamp="1602002389000">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1520" height="282" key="GridCell.Tab.0.right/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596119518574" />
-    <state x="557" y="207" key="Maven.ArtifactSearchDialog" timestamp="1594075307449">
+    <state width="1748" height="266" key="GridCell.Tab.0.right/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602002389000" />
+    <state width="1576" height="270" key="GridCell.Tab.0.right/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1601293186626" />
+    <state width="1748" height="328" key="GridCell.Tab.1.bottom" timestamp="1601586269007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="557" y="207" key="Maven.ArtifactSearchDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1594075307449" />
-    <state x="185" y="174" key="SettingsEditor" timestamp="1596562640509">
+    <state width="1748" height="328" key="GridCell.Tab.1.bottom/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601586269007" />
+    <state width="1748" height="328" key="GridCell.Tab.1.center" timestamp="1601586269007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="185" y="174" key="SettingsEditor/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596562640509" />
+    <state width="1748" height="328" key="GridCell.Tab.1.center/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601586269007" />
+    <state width="1748" height="328" key="GridCell.Tab.1.left" timestamp="1601586269007">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1748" height="328" key="GridCell.Tab.1.left/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601586269007" />
+    <state width="1748" height="328" key="GridCell.Tab.1.right" timestamp="1601586269007">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1748" height="328" key="GridCell.Tab.1.right/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601586269007" />
+    <state x="557" y="207" key="Maven.ArtifactSearchDialog" timestamp="1602080278912">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="557" y="207" key="Maven.ArtifactSearchDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602080278912" />
+    <state x="415" y="212" key="RollbackChangesDialog" timestamp="1601294926413">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="415" y="212" key="RollbackChangesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601294926413" />
+    <state x="185" y="174" key="SettingsEditor" timestamp="1596808649341">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="185" y="174" key="SettingsEditor/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596808649341" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1601575705669">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601575705669" />
     <state x="712" y="244" key="VCS.ChangeListViewerDialog" timestamp="1596451102285">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="712" y="244" key="VCS.ChangeListViewerDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596451102285" />
-    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596644136415">
+    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603119453605">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596644136415" />
+    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1603119453605" />
+    <state x="124" y="109" width="1608" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603108846131">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="124" y="109" width="1608" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1603108846131" />
     <state x="158" y="208" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1594642547759">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -451,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="598" y="404" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogintegrate/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595941506812" />
-    <state x="728" y="113" width="870" height="801" key="find.popup" timestamp="1593716320530">
+    <state x="480" y="242" width="896" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601563994120">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="728" y="113" width="870" height="801" key="find.popup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1593716320530" />
+    <state x="480" y="242" width="896" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601563994120" />
     <state x="749" y="327" key="git4idea.merge.GitMergeDialog" timestamp="1596449916609">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -467,33 +783,50 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="721" y="400" key="git4idea.rebase.GitRebaseDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596445054426" />
-    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596642900322">
+    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603118830761">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596642900322" />
+    <state x="749" y="445" key="git4idea.remote.GitConfigureRemotesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1603118830761" />
     <state x="762" y="383" key="git4idea.ui.GitTagDialog" timestamp="1596451180020">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="762" y="383" key="git4idea.ui.GitTagDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1596451180020" />
-    <state x="615" y="250" width="672" height="677" key="run.anything.popup" timestamp="1593716677679">
+    <state x="322" y="140" key="new project wizard" timestamp="1601667903807">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="615" y="250" width="672" height="677" key="run.anything.popup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1593716677679" />
-    <state x="549" y="174" width="993" height="678" key="search.everywhere.popup" timestamp="1595316986221">
+    <state x="322" y="140" key="new project wizard/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601667903807" />
+    <state x="401" y="152" width="993" height="678" key="search.everywhere.popup" timestamp="1602253196139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="549" y="174" width="993" height="678" key="search.everywhere.popup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595316986221" />
+    <state x="401" y="152" width="993" height="678" key="search.everywhere.popup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602253196139" />
+    <state x="321" y="1202" width="795" height="543" key="search.everywhere.popup/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1602149149213" />
     <state x="738" y="435" key="svn.passwordDialog" timestamp="1595607352954">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="738" y="435" key="svn.passwordDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595607352954" />
-    <state x="785" y="369" key="svn.propertyDialog" timestamp="1593773120250">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="785" y="369" key="svn.propertyDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1593773120250" />
     <state x="749" y="298" key="svn.repositoryBrowser" timestamp="1595342920378">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="749" y="298" key="svn.repositoryBrowser/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1595342920378" />
+    <state x="579" y="209" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1602080123919">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="579" y="209" key="vcs.ApplyPatchDifferentiatedDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602080123919" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/uk/co/alrayan/uk.co.alrayan.utils/0.0.1-SNAPSHOT/uk.co.alrayan.utils-0.0.1-SNAPSHOT.jar!/uk/co/alrayan/PinUtils.class</url>
+          <line>17</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/arb-utils/uk.co.alrayan.utils/src/main/java/uk/co/alrayan/PinUtils.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
