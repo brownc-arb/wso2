@@ -1,0 +1,27 @@
+Index: iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/java/org/wso2/carbon/identity/application/authentication/endpoint/client/UKAPIDataRetriever.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/java/org/wso2/carbon/identity/application/authentication/endpoint/client/UKAPIDataRetriever.java	(revision 101176)
++++ iam-webapps/wso2/financial-open-banking/artifacts/authentication-webapp/solution/src/main/java/org/wso2/carbon/identity/application/authentication/endpoint/client/UKAPIDataRetriever.java	(date 1605767930000)
+@@ -529,6 +529,10 @@
+                     paymentInitiationData.add(PERMISSIONS + " : " + paymentSetUpResponse.getData().getPermission());
+                     paymentInitiationData.add(FREQUENCY + " : " + paymentSetUpResponse.getData().getInitiation()
+                             .getFrequency());
++                    paymentInitiationData.add(INSTRUCTED_AMOUNT + " : " + paymentSetUpResponse.getData().getInitiation()
++                            .getFinalPaymentAmount().getAmount());
++                    paymentInitiationData.add(INSTRUCTED_CURRENCY + " :" + paymentSetUpResponse.getData().getInitiation()
++                            .getFinalPaymentAmount().getCurrency());
+                     paymentInitiationData.add(FIRST_PAYMENT_DATE_TIME + " : " + paymentSetUpResponse.getData().getInitiation()
+                             .getFirstPaymentDateTime());
+ 
+@@ -687,7 +691,7 @@
+                                     .getCreditorAccount().getName())
+                             .setPayerReference(payerReference)
+                             .build();
+-                } if(paymentSetUpResponse.getPaymentType()!=null && paymentSetUpResponse.getPaymentType().
++                } else if(paymentSetUpResponse.getPaymentType()!=null && paymentSetUpResponse.getPaymentType().
+                         contains("file-payment")){
+                     // Refer to: https://support.wso2.com/jira/browse/ALRAYANSUB-196
+                     paymentChargesRequestInfo = new PaymentChargesRequestInfoBuilder()
