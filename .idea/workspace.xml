@@ -613,6 +613,10 @@
     </state>
     <state x="222" y="183" width="1501" height="852" key="#Project_Structure/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601584328137" />
     <state x="178" y="1226" key="#Project_Structure/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1602098484554" />
+    <state x="838" y="436" key="#VCS_History_Cache_Settings" timestamp="1606252411132">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="838" y="436" key="#VCS_History_Cache_Settings/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606252411132" />
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601564090984">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -626,14 +630,14 @@
     </state>
     <state x="681" y="362" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1600165652001" />
     <state x="545" y="1370" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.1080.1536.864/0.0.1920.1080@0.1080.1536.864" timestamp="1602141674560" />
-    <state x="190" y="72" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1606249434711">
+    <state x="190" y="72" width="1579" height="919" key="CommitChangelistDialog2" timestamp="1606252308056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="190" y="72" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606249434711" />
-    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog" timestamp="1606232245331">
+    <state x="190" y="72" width="1579" height="919" key="CommitChangelistDialog2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606252308056" />
+    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog" timestamp="1606252925923">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606232245331" />
+    <state x="253" y="86" width="1393" height="800" key="DiffContextDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606252925923" />
     <state x="614" y="1293" key="FileChooserDialogImpl" timestamp="1602155790863">
       <screen x="0" y="1080" width="1536" height="864" />
     </state>
@@ -691,10 +695,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601575705669" />
-    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606249580750">
+    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606252824924">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606249580750" />
+    <state x="439" y="267" width="1225" height="535" key="Vcs.Push.Dialog.v2/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606252824924" />
+    <state x="518" y="261" key="VcsDiffUtil.ChangesDialog" timestamp="1606252542001">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="518" y="261" key="VcsDiffUtil.ChangesDialog/0.1080.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1606252542001" />
     <state x="124" y="109" width="1608" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603108846131">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
