@@ -9,21 +9,22 @@
         <module name="com.alrayan.wso2.user.core" />
         <module name="iam.alrayan.wso2.webapp.vasco" />
         <module name="com.alrayan.wso2.webapp.managementutility" />
+        <module name="uk.co.alrayan.utils" />
+        <module name="com.alrayan.wso2.vasco" />
         <module name="com.alrayan.wso2.keymanager" />
         <module name="com.alrayan.wso2.webapp.apimuserrecovery" />
         <module name="com.alrayan.wso2.workflow.signup" />
         <module name="com.alrayan.wso2.workflow.appregistration" />
-        <module name="com.alrayan.wso2.mail" />
-        <module name="com.alrayan.wso2.common" />
         <module name="com.alrayan.wso2.webapp.api" />
         <module name="open-banking-eidas-validator" />
         <module name="authentication-endpoint-solution" />
         <module name="com.alrayan.wso2.webapp.management" />
         <module name="com.alrayan.wso2.auth.arbdesktop" />
         <module name="com.alrayan.wso2.auth.arbfederated" />
+        <module name="com.alrayan.wso2.common" />
         <module name="com.alrayan.wso2.auth.arbbasic" />
         <module name="com.alrayan.wso2.auth.arbmobile" />
-        <module name="com.alrayan.wso2.vasco" />
+        <module name="com.alrayan.wso2.mail" />
         <module name="com.alrayan.wso2.cert.parser" />
       </profile>
     </annotationProcessing>
@@ -54,6 +55,7 @@
       <module name="com.alrayan.wso2.workflow.signup" target="1.8" />
       <module name="iam.alrayan.wso2.webapp.vasco" target="1.8" />
       <module name="open-banking-eidas-validator" target="1.8" />
+      <module name="uk.co.alrayan.utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

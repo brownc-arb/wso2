@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Al Rayan WSO2 Open Banking - Common" duration-ms="2" started-at="2020-07-28T12:35:46Z" finished-at="2020-07-28T12:35:46Z">
+  <suite name="Al Rayan WSO2 Open Banking - Common" duration-ms="9" started-at="2020-08-12T10:26:07Z" finished-at="2020-08-12T10:26:07Z">
     <groups>
     </groups>
-    <test name="commonTest" duration-ms="2" started-at="2020-07-28T12:35:46Z" finished-at="2020-07-28T12:35:46Z">
+    <test name="commonTest" duration-ms="9" started-at="2020-08-12T10:26:07Z" finished-at="2020-08-12T10:26:07Z">
     </test> <!-- commonTest -->
   </suite> <!-- Al Rayan WSO2 Open Banking - Common -->
 </testng-results>

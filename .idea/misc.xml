@@ -13,6 +13,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/arb-utils/uk.co.alrayan.utils/pom.xml" />
       </list>
     </option>
   </component>
@@ -21,5 +22,7 @@
     <resource url="https://www.w3.org/2001/XMLSchema-instance" location="$PROJECT_DIR$" />
     <xml-schema-version>XMLSchema_1_1</xml-schema-version>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
 </project>

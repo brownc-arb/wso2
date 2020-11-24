@@ -874,7 +874,8 @@
                                                         paymentChargesRequestInfo: $(this).attr('data-payment'),
                                                         appName: $(this).attr('data-appName'),
                                                         accountId: this.value,
-                                                        paymentType: '<%= paymentType %>'
+                                                        paymentType: '<%= paymentType %>',
+                                                        consentID: '<%=Encode.forHtml(consentId)%>'
                                                   })">
 
                                         <option value="default"
@@ -2431,7 +2432,8 @@
                     '<%= new ObjectMapper().writeValueAsString(paymentChargesRequestInfo)%>',
                 appName: '<%= app %>',
                 accountId: document.getElementById("accountId").value,
-                paymentType: '<%= paymentType %>'
+                paymentType: '<%= paymentType %>',
+                consentID: '<%=Encode.forHtml(consentId)%>'
             });
         }
         else
