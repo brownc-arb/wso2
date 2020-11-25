@@ -29,7 +29,9 @@
           <element id="library" level="project" name="Maven: com.sun.jersey.contribs:jersey-multipart:1.19.1" />
           <element id="library" level="project" name="Maven: org.jvnet.mimepull:mimepull:1.9.3" />
           <element id="library" level="project" name="Maven: commons-lang.wso2:commons-lang:2.6.0.wso2v1" />
-          <element id="library" level="project" name="Maven: uk.co.alrayan:uk.co.alrayan.utils:0.0.1-SNAPSHOT" />
+          <element id="archive" name="uk.co.alrayan.utils-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="uk.co.alrayan.utils" />
+          </element>
           <element id="library" level="project" name="Maven: junit:junit:4.10" />
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
         </element>
