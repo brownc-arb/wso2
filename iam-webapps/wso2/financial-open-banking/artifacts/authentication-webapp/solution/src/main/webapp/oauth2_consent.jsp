@@ -717,7 +717,7 @@
                                     selectedAccount = da.getIdentification();
                                 %>
                                 <div class="form-group">
-                                    <h3><strong> Selected Account: <%= selectedAccount%></strong><h3>
+                                    <h3><strong> Selected Account: <%= selectedAccount%></strong></h3>
                                 </div>
                                 <%
                                 } else {
