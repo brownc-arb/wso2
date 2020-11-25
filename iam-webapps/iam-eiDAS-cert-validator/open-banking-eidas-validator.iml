@@ -175,7 +175,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.xalan:xalan:2.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.wso2.orbit.org.apache.neethi:neethi:2.0.4.wso2v5" level="project" />
     <orderEntry type="library" name="Maven: org.json.wso2:json:3.0.0.wso2v1" level="project" />
-    <orderEntry type="library" name="Maven: org.json:json:20140107" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
@@ -187,5 +186,7 @@
     <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.59" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.59" level="project" />
     <orderEntry type="library" name="Maven: com.wso2.finance:com.wso2.finance.open.banking.common:1.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20170516" level="project" />
+    <orderEntry type="library" name="Maven: org.wso2.orbit.com.nimbusds:nimbus-jose-jwt:5.8.0.wso2v1" level="project" />
   </component>
 </module>
