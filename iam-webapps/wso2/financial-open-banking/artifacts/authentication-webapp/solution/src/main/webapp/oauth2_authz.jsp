@@ -2433,7 +2433,7 @@
                 appName: '<%= app %>',
                 accountId: document.getElementById("accountId").value,
                 paymentType: '<%= paymentType %>',
-                consentID: '<%=Encode.forHtml(consentId)%>'
+                consentID: $("#id").val()
             });
         }
         else
