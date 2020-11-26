@@ -18,3 +18,6 @@
 
 /iam-webapps/iam-user-management-api/target/
 /iam-webapps/iam-eiDAS-cert-validator/target/
+/.idea/libraries/
+/iam-webapps/iam-eiDAS-cert-validator/target/
+/iam-webapps/iam-user-management-api/target/

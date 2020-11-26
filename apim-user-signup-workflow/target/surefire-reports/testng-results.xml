@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Al Rayan WSO2 Open Banking - User Sign Up Workflow" duration-ms="7" started-at="2020-08-12T10:30:26Z" finished-at="2020-08-12T10:30:26Z">
+  <suite name="Al Rayan WSO2 Open Banking - User Sign Up Workflow" duration-ms="6" started-at="2020-11-26T12:16:13Z" finished-at="2020-11-26T12:16:13Z">
     <groups>
     </groups>
-    <test name="userSignUpWorkflowTest" duration-ms="7" started-at="2020-08-12T10:30:26Z" finished-at="2020-08-12T10:30:26Z">
+    <test name="userSignUpWorkflowTest" duration-ms="6" started-at="2020-11-26T12:16:13Z" finished-at="2020-11-26T12:16:13Z">
     </test> <!-- userSignUpWorkflowTest -->
   </suite> <!-- Al Rayan WSO2 Open Banking - User Sign Up Workflow -->
 </testng-results>

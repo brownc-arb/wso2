@@ -3,7 +3,7 @@ Bundle-Description: Al Rayan WSO2 Open Banking
 Bundle-SymbolicName: com.alrayan.wso2.workflow.signup
 Built-By: obekpaa
 Bundle-ManifestVersion: 2
-Bnd-LastModified: 1597228227392
+Bnd-LastModified: 1606392974528
 Import-Package: com.alrayan.wso2.common;version="[1.0.0, 2.0.0)",com.a
  lrayan.wso2.common.exception;version="[1.0.0, 2.0.0)",com.alrayan.wso
  2.common.model;version="[1.0.0, 2.0.0)",com.alrayan.wso2.common.utils

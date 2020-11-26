@@ -24,12 +24,17 @@
     <remote-repository>
       <option name="id" value="local-maven-repo" />
       <option name="name" value="local-maven-repo" />
-      <option name="url" value="file://$PROJECT_DIR$/local-maven-repo" />
+      <option name="url" value="file://$PROJECT_DIR$/../../d/svn/wso2/iam-openbanking/local-maven-repo" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="local-maven-repo" />
       <option name="name" value="local-maven-repo" />
       <option name="url" value="file://./local-maven-repo" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-maven-repo" />
+      <option name="name" value="copy of WSO2 finance jars that we cant get from WSO2" />
+      <option name="url" value="file://$PROJECT_DIR$/local-maven-repo/local-maven-repo" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -39,7 +44,7 @@
     <remote-repository>
       <option name="id" value="local-maven-repo" />
       <option name="name" value="copy of WSO2 finance jars that we cant get from WSO2" />
-      <option name="url" value="file://$PROJECT_DIR$/local-maven-repo" />
+      <option name="url" value="file://$PROJECT_DIR$/../../d/svn/wso2/iam-openbanking/local-maven-repo" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="local-maven-repo" />
@@ -54,12 +59,12 @@
     <remote-repository>
       <option name="id" value="local-maven-repo" />
       <option name="name" value="copy of WSO2 finance jars that we cant get from WSO2" />
-      <option name="url" value="file://$PROJECT_DIR$/local-maven-repo" />
+      <option name="url" value="file://./local-maven-repo" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="local-maven-repo" />
       <option name="name" value="copy of WSO2 finance jars that we cant get from WSO2" />
-      <option name="url" value="file://./local-maven-repo" />
+      <option name="url" value="file://$PROJECT_DIR$/local-maven-repo" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="local-maven-repo" />
@@ -70,11 +75,6 @@
       <option name="id" value="local-maven-repo" />
       <option name="name" value="local-maven-repo" />
       <option name="url" value="file://C:\d\svn\wso2\iam-openbanking\iam-webapps/local-maven-repo" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="local-maven-repo" />
-      <option name="name" value="copy of WSO2 finance jars that we cant get from WSO2" />
-      <option name="url" value="file://$PROJECT_DIR$/local-maven-repo/local-maven-repo" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="jboss.community" />
