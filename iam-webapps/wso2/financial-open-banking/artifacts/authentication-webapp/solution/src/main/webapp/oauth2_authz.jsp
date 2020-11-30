@@ -82,11 +82,13 @@
 	final String REDIRECT_URI = "redirect_uri";
     String paymentType = "";
 
-    String accessToken = getServletContext().getInitParameter(ACCESS_TOKEN);
-    boolean displayScopes = Boolean.parseBoolean(getServletContext().getInitParameter(DISPLAY_SCOPES));
-
+    String accessToken = config.getServletContext().getInitParameter(ACCESS_TOKEN);
+    boolean displayScopes = Boolean.parseBoolean(config.getServletContext().getInitParameter(DISPLAY_SCOPES));
 
     String sessionDataKey = request.getParameter(("sessionDataKey"));
+
+    // String consentId = request.getParameter("consentID");
+
     Map<String, Serializable> sensitiveDataMap = SensitiveDataRetriever.getSensitiveDataWithSessionKey(sessionDataKey);
 
 
