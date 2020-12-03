@@ -82,9 +82,11 @@ try {
     String challengeKey = result.getChallengeKey();
     String base64Binary = generateCrontoImage(result);
 %>
-<img src="data:image/jpg;base64, <%= base64Binary %>"
-     alt="<%=AuthenticationEndpointUtil.i18n(resourceBundle, "cronto.code")%>"/>
+<%--ALRAYANSUB-240---%>
+ <img src="data:image/jpg;base64, <%= base64Binary %>"
+     alt="<%=AuthenticationEndpointUtil.i18n(resourceBundle, "cronto.code")%>" class="img-responsive"/>
 <input type="hidden" name="vascoChallengeKey" id="vascoChallengeKey"
+
 <%--ALRAYANSUB-195---%>
        value="<%= Encode.forHtmlAttribute(challengeKey) %>"/>
 <%
