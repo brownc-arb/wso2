@@ -2434,8 +2434,8 @@
                     '<%= new ObjectMapper().writeValueAsString(paymentChargesRequestInfo)%>',
                 appName: '<%= app %>',
                 accountId: document.getElementById("accountId").value,
-                paymentType: '<%= paymentType %>',
-                consentID: '<%=Encode.forHtml(consentId)%>'
+                paymentType:  '<%= paymentType %>',
+                consentID: $("#id").val()
             });
         }
         else

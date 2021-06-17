@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1597228007868
+Bnd-LastModified: 1607014011189
 Build-Jdk: 1.8.0_251
 Built-By: obekpaa
 Bundle-Description: Al Rayan WSO2 Open Banking

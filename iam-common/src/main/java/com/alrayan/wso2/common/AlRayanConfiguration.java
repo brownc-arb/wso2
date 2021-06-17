@@ -261,7 +261,13 @@ public enum AlRayanConfiguration {
 
     USER_REDIRECT_STORE_URL("user.login.redirect.url", "localhost"),
 
-    USER_REDIRECT_STORE_PORT("user.login.redirect.port", "9443");
+    USER_REDIRECT_STORE_PORT("user.login.redirect.port", "9443"),
+
+    /**
+     * PIN complex validation check
+     */
+    PIN_COMPLEXITY_CHECK("alrayan.pin.complexity.check", "true");
+
 
     private final String property;
 

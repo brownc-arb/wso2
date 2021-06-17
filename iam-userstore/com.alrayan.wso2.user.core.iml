@@ -10,7 +10,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="uk.co.alrayan.utils" scope="PROVIDED" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.authentication.framework:5.12.153" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.wso2.carbon:org.wso2.carbon.utils:4.4.34" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.wso2.orbit.org.bouncycastle:bcprov-jdk15on:1.52.0.wso2v1" level="project" />

@@ -16,6 +16,14 @@
 /iam-authenticators/iam-arb-basic-authenticator/target/*
 
 
-/iam-webapps/iam-user-management-api/target/
+/iam-webapps/iam-user-management-ap
+i/target/
 /iam-webapps/iam-eiDAS-cert-validator/target/
+/.idea/libraries/
+/iam-webapps/iam-eiDAS-cert-validator/target/
+<<<<<<< HEAD
 /.idea/
+=======
+/iam-webapps/iam-user-management-api/target/
+.idea
+>>>>>>> 74742847d89a97058a2d8ddb8fbae175679aea5f
