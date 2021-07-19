@@ -15,8 +15,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */ %>
-<%@ page
-        import="org.wso2.carbon.identity.application.authentication.endpoint.util.UserRegistrationAdminServiceClient" %>
+<%@ page import="org.wso2.carbon.identity.application.authentication.endpoint.util.UserRegistrationAdminServiceClient" %>
 <%@ page import="org.owasp.encoder.Encode" %>
 <%@ page import="org.wso2.carbon.identity.user.registration.stub.dto.UserFieldDTO" %>
 <%@ page import="java.util.List" %>

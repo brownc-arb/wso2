@@ -100,7 +100,7 @@
 		<div class="container-fluid">
 		   <div class="pull-left brand float-remove-xs text-center-xs brand-container">
 			  <img src="images/Al_Rayan_Logo-150min.jpg" class="logo" alt="Alrayan Open Banking"/>
-			  <h2 class="text-center-sm text-center-xs text-center-md text-right">Al Rayan bank user portal</h2>
+			  <h2 class="text-center-sm text-center-xs text-center-md text-right">Al Rayan Bank User Portal</h2>
 		   </div>
 		</div>
 	</header>
